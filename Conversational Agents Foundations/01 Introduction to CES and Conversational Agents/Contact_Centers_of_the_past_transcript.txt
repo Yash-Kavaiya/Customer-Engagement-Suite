@@ -1,0 +1,101 @@
+VIDEO TRANSCRIPT
+==================================================
+
+Let’s take a look at the ways in which contact centers have evolved over time.
+In this module you’ll explore contact centers of the past, also known as legacy
+contact centers. You’ll delve into some of the challenges of these legacy
+contact centers and discuss the various ways in which CES provides solutions for
+them. Then, you’ll step into the future of contact centers. Here, you’ll delve
+into Artificial Intelligence, or Generative AI, and how it transforms contact
+center operations today. Let’s get started! Customer service is a pressured
+market, looking for a new paradigm to overcome structural challenges. In most
+cases, contact centers are also viewed as a cost center. Any effort devoted to
+digital transformation has struggled to keep pace with the rapid innovation and
+demand for customer support services which has seen a steep increase over the
+last 5-10 years. The customer experience is often handled by legacy systems
+stitched with incremental technologies that are not always optimally
+interoperable. As a result of this, customers are often faced with challenges
+that negatively impact their experience. Let’s take some time to understand
+these customer challenges. The first challenge that customers face when dealing
+with legacy contact centers systems is the lack of a unified experience.
+Customers nowadays expect to connect with companies throughout multiple online
+channels and with a consistent experience. Second is rigid decision trees.
+Traditional contact center technology suffers from a lack of flexibility from
+the predesigned paths. It provides experiences that are far from human like and
+end up creating frustration for the user. Another obstacle is increased
+expectations. Users prefer the convenience and speed of on-demand services and
+answers to their questions. And lastly, there’s the issue of dropped, repeat and
+unresolved calls. These lead to customers facing the frustration of repeatedly
+explaining the same issue to multiple support agents. By observing these
+challenges, it’s easy to derive that the customer-centric contact center was a
+distant dream for many organizations. Next, let’s focus on the infrastructure
+challenges that underline all this complexity. The most common of these
+infrastructure challenges include legacy systems that are often neglected,
+rarely upgraded, and difficult to integrate. Additionally, there is a business
+logic that sits on top of these systems which is convoluted and challenging to
+maintain. Thirdly, stringent infrastructure and security protocols often add
+friction to transformation, given the fact that contact centers house a large
+amount of personal identifiable data, or PII. Lastly, the poor interoperability
+between the patchwork of systems often stitched together makes it difficult to
+retrieve and analyze data effectively. Retrieving a simple piece of information
+can take valuable minutes or hours, frustrating agents and customers alike.
+These invisible walls – legacy systems, tangled business logic, weak security,
+and data fragmentation – are the silent enemies of efficiency, agility, and
+customer experience. Human agent challenges are often overlooked, but they play
+a critical role in the current status quo of many contact centers. Contact
+center agents often face a number of challenges that frustrate their employee
+experience and are at the root of the high attrition rate in contact centers.
+The first of these challenges is Productivity. Agents have to manage multiple
+slow systems, and bounce between browser tabs to accurately manage customer
+calls. There’s also the issue of limited flexibility, where agents are limited
+in what they can say and do, and are almost always measured on this. The third
+issue involves accurate context. The majority of agents attend to calls without
+sufficient information about the customer’s case. As a result of this, agents
+often have to start from the beginning to collect the customer’s information.
+And a final challenge is data collection and documentation, where agents often
+have to update multiple systems and summarize their calls in a timely manner.
+Agents are the heart of a contact center, but their tools often limit their
+ability to efficiently handle customer cases. By providing accurate context and
+streamlined data collection, they’ll have the ability to transform their
+experiences, turning them into empowered customer champions. Lastly, it is
+important to mention AI challenges. AI as a concept and technology is not new in
+the contact center, but few have been able to harness its full potential in the
+right way. The Chatbot revolution started around 2016, when many businesses
+started to heavily invest in chatbots. The first challenge that they encountered
+were the underwhelming results, following overhyped promises on performance.
+This is often referred to as “Chatbot hangover”. Second was maturity. Given the
+novelty of the technology, many businesses were missing the required expertise
+on what it takes to build a highly catered conversational experience. The third
+challenge was the lack of availability or engagement of the right set of
+resources. Building bots was not a trivial task, and required a deep expertise
+in machine learning, linguistics and data science. However, leaders still cite
+focusing on customer service as a top priority. Given all the challenges that
+Contact centers faced in the past, and the critical role that Contact Centers
+play in the future of enterprise; focusing on customer service by improving the
+customer experience is a key priority for many businesses today. Large
+investments are being deployed to craft customer experiences that meet the high-
+quality standards that customers expect nowadays. This renewed focus on customer
+service is expected to bring consistent operational improvement and top line
+revenue growth for enterprises. According to a study from Gartner, 63% of
+service and support leaders put the improvement of current self-service
+experiences as front and center in their operational strategies. 58% already
+have plans in place to pivot their customer service function to improve its
+contribution to top-line revenue growth through new digital transformation.
+Google Cloud's extensive Customer Engagement Suite (or CES), can help transform
+an enterprise’s customer service by offering the following solutions: First, it
+provides an interaction experience that is close to human. This is far from the
+robotic, pre-recorded voices that often support the customer service experience
+of many call centers. Then there is adaptive routing to reduce the need for
+human escalation, as compared to the previous rules-based approach. Third, it
+has the ability to empower human agents with the right information to resolve
+customer queries as fast and efficiently as possible. It also consists of auto-
+tuned, AI driven speech models that do not require regular tuning. Finally,
+Google Cloud can also ensure an omni channel experience through the integration
+to the billing and operations systems in the same platform. To summarize,
+investing in a new, AI powered customer service experience can potentially
+deliver 4 key benefits: The first is to boost agent and employee productivity.
+The second is to improve self-service and deflection rates. The third benefit is
+to modernize chat and voice infrastructure. And finally, the fourth benefit is
+to enhance insights and customer predictions. Good conversational experiences
+lead to better customer experiences which in turn greatly enhance the ability of
+enterprises to thrive both financially and operationally.

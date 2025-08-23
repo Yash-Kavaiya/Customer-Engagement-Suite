@@ -1,0 +1,40 @@
+VIDEO TRANSCRIPT
+==================================================
+
+So, how can Google Cloud enterprises “enter the future”? A new era has begun
+with “Industrial Revolution 4-point-0” driven by Artificial Intelligence. This
+revolution is considered as impactful as the three preceding it, starting from
+the steam power revolution in 1784, followed by the electricity revolution in
+1870 and the first information technology revolution in 1969. This new era is
+defined by intuitive human-to-computer interactions powered by a new field of
+Artificial Intelligence called Generative AI. Generative AI is capable of
+understanding and generating language through modalities such as text, audio,
+video and images. As AI transforms contact centers, it is necessary to have a
+framework that breaks down user self-service functionalities into 3 categories:
+Informational, Transactional, and Generative. Informational functionalities
+serve use cases where the user wants to know something. Conversely,
+transactional functionalities serve use cases where the user wants to do
+something. While, generative functionalities serve use cases both informational
+and transactional. Keep in mind that these are not mutually exclusive. One
+experience can be informational, transactional, and generative. Essentially, all
+three work together to transform the contact center experience. For instance, a
+user calls in to check their bill balance (informational), then asks to pay
+their bill (transactional), with generative capabilities used for conversational
+fallout. To the user this is one conversation, but in order to develop and
+deploy to production it needs to be broken down into these categories. From
+here, you can implement generative technologies into both informational
+transactional use cases to create new wonderful experiences. Behind the scenes,
+the platform that powers all the Generative AI functionalities in CES is Vertex
+AI, which is Google Cloud’s Generative AI platform. This is a collection of APIs
+and tools that supports all the needs of the new Generative AI-centric
+enterprise. Starting at the bottom of the stack, we have Google’s world class AI
+optimized infrastructure, fully integrated with Google Data Cloud. On top of it
+sits the Vertex AI Model Garden, a one stop shop to find first-party, open
+source and third-party large language models. The AI Platform leverages the
+resources from the Model Garden to provide end-to-end tooling to build, deploy
+and monitor Gen AI models and pipelines. Agent Builder is the interface that
+developers can then lean on to access the AI platform resources to quickly and
+easily infuse chat, Gen AI, and search into their Enterprise applications. AI
+Solutions, such as Contact Center AI leverage the Vertex AI Search and
+Conversation to deploy chatbots and voicebots at scale. These capabilities are
+both accessible as out-of-the-box solutions and custom agents.
