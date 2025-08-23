@@ -1,0 +1,83 @@
+VIDEO TRANSCRIPT
+==================================================
+
+Now that you know a little more about Vertex AI and Customer Engagement Suite
+(CES), let’s dive into the building blocks of CES. The two main objectives of
+this module are to understand the foundational blocks of the CES solution and
+how each block empowers best in class customer service. The Customer Engagement
+Suite Platform consists of a conversational core that supports three pillars.
+These pillars include: Conversational Agents, Agent Assist, and Insights. Let’s
+break these down. The first pillar is Conversational Agents. It’s like a parent
+container that encompasses your entire chat bot, voice bot, or conversational
+application. Conversational Agents can be built with Flows, which are powered by
+natural language understanding, or NLU. Alternatively, it can be built with
+Playbooks, which are powered by LLMs. Both of these allow it to comprehend and
+respond to your customers’ questions and requests. Conversational Agents offer
+three benefits. First, it delivers an on brand, omni-channel customer self-
+service experience for voice and chat by getting answers to questions or
+completing transactions conversationally, 24 hours a day, 7 days a week It also
+allows customers to get fast responses to their queries based on Natural
+Language Processing, which can parse topics based on the conversation, identify
+the customer intent, and automatically respond accurately. And finally, when a
+human agent is needed, the system enables a seamless transition by providing
+them with conversation context, transcripts, and real-time guidance for a smooth
+takeover. The second pillar of the conversational core is Agent Assist, also
+known as the Empowering Coach. With Agent Assist, human agents are actively
+supported during live conversations. It analyzes customer intent and provides
+real-time suggestions and relevant information to the agent, aiding in
+delivering more efficient and effective customer interactions. The NLU engine
+and the LLMs also fuel Agent Assist, adding an extra layer of intelligence. In
+scenarios where live agent support remains necessary, Agent Assist facilitates a
+seamless transition from virtual to human interaction. When a call cannot be
+resolved by the Conversational Agent, it is routed to a human agent. This
+continuous support approach empowers human agents with transcripts of the
+customer-Conversational Agent conversation, allowing them to continue the
+interaction without repeating questions. Additionally, Conversational Agents
+provide real-time assistance to human agents. This includes delivering relevant
+information, guiding workflows, and offering turn-by-turn suggestions. This
+ensures a consistent customer experience. Lastly, by rating these smart replies
+for usefulness, live agents contribute to the model's learning, improving the
+accuracy of assistance over time. The final pillar is Insights: The Knowledge
+Vault CES Insights acts as a powerful analytics engine for Contact Centers. It
+processes and analyzes historical conversation data, providing you with
+actionable insights. This enables you to identify optimization opportunities,
+improve operational efficiency, and enhance the overall customer experience.
+Insights can greatly empower a business by providing a live dashboard with stats
+like the number of calls received, the percentage split among intents, key
+compliance phrases and more. These metrics, enabled by Natural Language
+Processing, help businesses understand their customers better. Insights also
+assists businesses with various compliance requirements by identifying key
+phrases to help operations and QA stay on top of the enterprises most important
+obligations. Lastly, Insights provides intelligence to businesses by surfacing
+sentiment and language data on how live agents interact with customers. So,
+there you have it – Google Cloud’s Customer Engagement Suite or CES, a three-
+pillar powerhouse designed to elevate your Contact Center to new heights.
+Remember, it's not just about replacing humans; it's about empowering them with
+AI to create a seamless, efficient, and ultimately, customer-centric journey.
+Now, let’s review some use cases that these technologies can help unlock. In
+this example, a clinic wants to implement a conversational interface to allow
+clinicians seamless access to patient information. Examples of possible use
+cases include: A virtual nurse to help doctors with summarizations of medical
+records. An AI assistant to review patient scans, x-rays, and charts to help
+determine best treatment options. And a business that wants to create an
+internal tool for searching and retrieving insurance codes based on patient
+symptoms. Medical imaging can be slow, and analyzing documents or images can
+often take doctors and nurses away from valuable time with patients. Having the
+assistance of an AI powered Conversational Agent can speed up medical imaging
+classification, helping healthcare professionals spend more time delivering
+great care, and improving patient outcomes. Retail is another industry primed
+for disruption with AI in customer services. In this example, a fast food chain
+wants to streamline drive-thru ordering for a frictionless customer experience.
+Examples of use cases include: A business that wants to create a chatbot to
+answer Product FAQs. A business such as a large restaurant chain that wants to
+create a multi-modal food order taking experience. A business is unsure why
+customers are calling in and wants to identify conversational topics and areas
+to focus self-service efforts. Lastly, AI powered Conversational Agents are
+poised to transform customer service in the Telecommunications industry. Some
+telco Conversational Agents use case examples are: A business looking to build a
+voice virtual assistant for their contact center operations spanning across
+multiple domains like Billing, Payments, Troubleshooting, and Accounts. A
+business that wants real-time suggestions for call center agents to decrease
+average handle time. And a business that requires an omni-channel solution to
+categorize and summarize their calls. These use cases provide clear benefits to
+both the enterprise and the customers.
