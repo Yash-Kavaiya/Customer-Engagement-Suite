@@ -1,0 +1,44 @@
+VIDEO TRANSCRIPT
+==================================================
+
+Now that you have a foundational knowledge of key products and features of the
+CES solution, let’s delve into its go-to-market strategy. In this module, you’ll
+explore the Customer Service Modernization Solution, the new Google Cloud
+Consulting Go-To-Market strategy. This comprises of a number of service packages
+that leverage specific CES and Google Cloud products to create value for
+customer services use cases, which you’ll also get to explore throughout this
+module. As part of Google Cloud’s evolving Go To Market, CES has become a
+central set of products which combine to create the Customer Service
+Modernization AI Solution. Sellers across the globe have learned about the value
+that Google Cloud can unlock when Google Cloud Consulting and Partners leverage
+CES to modernize the customer experience. The Customer Service Modernization
+Solution helps customers to improve self service and deflection rates. Customers
+can easily access enterprise and product data to boost agent productivity and
+improve customer response time, as well as access a digital concierge capable of
+delivering a superior, human-like customer experience across both chat and voice
+channels. It can also be used to modernize chat and voice infrastructure.
+Customers can quickly replace their legacy interactive voice response systems,
+modernizing the overall chat and voice infrastructure. Additionally, it helps to
+boost agent productivity. Frontline customer service agents’ productivity can be
+greatly enhanced by providing real time assistance through quick access to
+enterprise data. And finally, it also helps by providing real-time customer
+service insights. To achieve these business goals, Google Cloud Consulting has
+built a set of Service Packages that leverage specific CES or Google Cloud
+products (like CES Platform, Agent Assist, Insights and BigQuery) that are
+tailored to produce these outcomes. Customers can purchase these service
+packages from Google Cloud Consulting directly or through Partners. Service
+Packages are comprised of Offerings which allow customers to choose which
+elements of the modernization they would like to focus on. The Service Packages
+are constructed to cater as much as possible to the different needs of the
+modern enterprise. Depending on their business goals, a customer may opt for a
+Full Service Transformation, in which case they would engage Google Cloud
+Consulting or a partner to deliver all pillars of the transformation.
+Alternatively they may decide to focus on one or two areas. As an example, if
+the customer purchased the Customer Service Platform Modernization and Real-Time
+Customer Service Insights Packages from Google Cloud Consulting, the offerings
+that would be delivered in the context of this transformation would be: Build
+Virtual assistant with Conversational AI. Conversation Insights. And CX
+Transformation with CESP. The bottom line is that Google Cloud Consulting’s
+modular approach to service packages can easily help jumpstart your sales
+conversations that maps service packages to a specific offering leveraging
+specific CES or Google Cloud products.

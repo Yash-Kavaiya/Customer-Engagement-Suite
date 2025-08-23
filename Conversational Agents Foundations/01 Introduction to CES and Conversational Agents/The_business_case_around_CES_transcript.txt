@@ -1,0 +1,81 @@
+VIDEO TRANSCRIPT
+==================================================
+
+Next, let’s zoom in on the business case around CES. When defining the business
+case for a contact center, it’s good to look at customer service priorities
+through 4 lenses and to consider some key questions. The first is Scale. When
+analyzing scale, you could ask the following questions: Are interaction volume
+and average handle time primary concerns? And are you looking to improve agent
+C-SAT (shorthand for customer satisfaction) or occupancy rate? Next is cost. Are
+costs per customer interaction, back office expenses, or overall customer volume
+interaction costs driving decision-making? Also of importance is experience. Is
+improving your customer satisfaction rates, reducing customer churn, and
+optimizing interaction channels your primary concern? Finally, there’s Growth.
+Consider the following question: Are increasing revenue with upsell and cross-
+opportunities as well as decreasing your customer acquisition costs important?
+Once the priorities are identified, there are many metrics used in the contact
+center space to measure their degree of achievement. Ideally the goal of any use
+case is to decrease cost while increasing efficiency, revenue and overall
+customer experience. So of these numerous metrics, the ones that are most
+commonly monitored are: volumes, average handle time, and containment rate.
+Let’s dive deeper into each of these. Volume is the number of contacts coming
+into a specific channel (either chat or voice) for a specific interaction,
+function, intent or agent group. Average handle-time is how long it takes a live
+agent to complete a customer interaction. Containment can be defined as the
+percentage of users that are able to successfully complete a self-service
+function without the need for human intervention. Most contact centers will have
+immediate containment numbers. This is not always 100% accurate for determining
+if a user was successful because users can and do call back when their issue is
+not resolved. Because of this, most contact centers evaluate 48 hours or 72
+hours containment for business priorities. 48 hours or 72 hours containment is a
+better indicator of a user success because it tracks if the user has contacted
+the company more than once for the same intent within a certain timeframe. Most
+enterprises will have some layer of business logic that filters out certain
+types of users. So when speaking about Volumes, it is crucial that you evaluate
+not just Total volume but also analyze addressable volume. Addressable volume is
+the total of contacts after screening out for various business rules. The
+enterprise may also already have an incumbent solution containing calls (also
+known as baseline). This would also subtract volumes for the new solution. So in
+order to have a clear understanding of the potential impact of your new
+solution, you must look at Total Volume, Addressable Volume, and Baseline
+Contained to derive a realistic estimate of the total number of calls going to
+self service. Total Volume is the top of the funnel traffic per function.
+Addressable Volume is after business logic screening. Baseline Contained are the
+calls already going to self-service. And Potential impact is the final volume
+number. Average handle time is another key metric used to evaluate the
+performance of a contact center. It measures how long it takes a live agent to
+complete a customer interaction. It is generally measured as a percentage or
+total time in minutes, and calculated as the cumulative total time spent on
+calls or interactions divided by the number of calls or interactions. The longer
+Average Handle Time the more complex the interaction. Lastly, Containment can be
+defined as the percentage of customers that are able to successfully complete a
+self-service function without the need for human intervention. Let’s analyze a
+quick example of containment. Sarah asks to move her billing date from the fifth
+to the twelfth. The Conversational Agent intelligently processes Sarah’s request
+by updating her billing date and Ads profile. With the Billing date moved, Sarah
+concludes the call. She never interacted with a human agent, so Sarah’s contacts
+are contained. The reason why containment is often deemed to be the most
+critical metric in a business leveraging CES, is because its benefits touch
+every point in the customer and the human agent journey. Containing more calls
+allows agents to focus on the most complex use cases. This includes the ones
+with potential for up and cross selling which increases the average revenue per
+user or ARPU. A higher containment usually indicates a good customer experience
+with low churn and abandonment. Where customers are happy, agents are happy, and
+their rate of attrition tends to decrease by an estimated 5 to 7%. It’s a win-
+win situation for everyone, which is why CES is often positioned as the end-to-
+end solution for all contact centres’ needs. A tactical way to determine the
+opportunity for CES is to create a small business case leveraging the Contact
+center call volume, average handle time, and average hourly rate. With these
+three numbers you can create a simple equation to determine the dollar value of
+the opportunity. For example, a customer gets 1000 contacts a day about their
+product FAQs. The average handle time is 3 minutes and the live agents cost an
+average of 21 dollars and 95 cents an hour. This is over 1000 dollars of cost
+per day on answering product FAQs. Now let’ imagine that this company also
+provides custom designs and manufacturing for flooring components. In this case
+they have 100 contacts per day, each call takes 45 minutes and the average live
+agent cost is 21 dollars and 95 cents per hour. The net cost is over 1600
+dollars per day in opportunity. So the custom jobs customer service is on
+average more expensive than the Product FAQ call center experience, despite
+having one tenth of the incoming volumes. This indicates that the volume alone
+is not a great indicator of opportunity size. From this example, it would be
+more valuable to focus on custom jobs than product FAQs.

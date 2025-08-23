@@ -1,0 +1,58 @@
+VIDEO TRANSCRIPT
+==================================================
+
+When assessing the opportunity to embrace CES as a solution for a business, it
+is important to think about use cases and user personas to best target
+development efforts. Let’s analyze the details of these use cases and user
+personas. In this module, you’ll learn to define a use case before analyzing how
+to best leverage design thinking to create user-centered solutions. Finally,
+you’ll learn how to prioritize work using the delta use case canvas approach.
+First, what is a use case? A use case is a description of how technology can be
+leveraged to address a specific user need. Use cases typically include the
+following information: A description of the goal that the user is trying to
+achieve. A list of the steps that the user takes to achieve the goal. A
+description of the system's responses to the user's actions. Any preconditions
+or assumptions that must be met in order for the use case to be successful. And
+any postconditions that must be met after the use case has been completed. A
+user persona is a fictional character that represents a typical user of a
+product or service underpinning a use case. Personas are generally based on
+real-world research and are used to help businesses understand their target
+audience in order to create products and services that are more likely to meet
+their needs. Displaying empathy for a user is a great way to create products and
+services that are successful in the market as more user-friendly and enjoyable
+to use. Personas can help you to make better decisions about your products and
+services. For example, you can use personas to test new features or decide how
+to best cater a marketing message. To properly leverage your user persona when
+designing conversational applications, you need to consider the following
+points. Understand the brand by interviewing every possible stakeholder.
+Different stakeholders will have different perspectives on the brand. Then
+review the marketing material, the company website, commercials, and anything
+else open to the public. If possible, visit the contact center as well. Then
+understand the customer by asking the following questions. First, what are their
+needs? Then, what does their customer journey look like? And also, what is their
+demographic and degree of engagement? Once you understand the customer you can
+start to understand the task or the intent of the user. In other words, what are
+users mostly reaching out to the contact center about? Finally, create
+characters that represent the users and stakeholders across the contact centers
+engagement journey. For example, Contact Centers Managers, Call Center Agents,
+Gen X Customers and Legacy Customers. All this information can be used to build
+a persona for your Conversational Agent that best caters to your “real” user
+personas. In building a Conversational Agent persona, the questions you want to
+answer are as follows. What’s the name of your Conversational Agent, and is
+there any meaning behind this name? What’s the age or age range of this
+Conversational Agent? This informs the agent’s tone (like energetic or
+sophisticated.) What’s the gender of your Conversational Agent? Knowing the
+gender of the Conversational Agent helps create the custom voice. Does the
+service that your Conversational Agent provides require any special training?
+What role will this Conversational Agent play in your organization, (like
+general customer representative or technical support?) Note that the goal of
+creating a profile for the Conversational Agent is not to trick the user into
+thinking they’re talking to a human being. The profile is there to serve as a
+guide to help conversation designers write dialog with a uniform communication
+style. Here is an example user persona for Betty, an early-to-mid-thirties
+female. She is approachable, happy and friendly. From her profile, you can see
+that she is also trustworthy, reliable and consistent. Furthermore, she provides
+convenience and low effort customer service, and is also patient without rushing
+the customer. Her interactions are simple, and straight forward. This role is
+best catered as a general customer service representative that can route
+customers to other service branches.

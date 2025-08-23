@@ -1,0 +1,75 @@
+VIDEO TRANSCRIPT
+==================================================
+
+Next, you’ll unpack what greenfield and brownfield implementations look like
+with CES. In this module, you’ll learn to: Define greenfield & brownfield
+customers. Understand greenfield and brownfield use case examples and their
+advantages & disadvantages. And identify a greenfield or brownfield customer.
+Let’s get started. Greenfield customers are those who are building their
+customer contact center strategy from scratch. They typically have no legacy
+systems or infrastructure in place and they are free to choose the best
+technology solutions for their needs. Conversely, Brownfield customers are those
+who are already operating customer contact centers that have existing systems
+and infrastructure in place. They may be looking to upgrade their systems or add
+new capabilities, but they need to do so in a way that is compatible with their
+existing environment. For both greenfield and brownfield customers, Google CES
+can offer a number of benefits. Some example Greenfield use cases are: A startup
+company that is building its first chatbot. A consumer goods company that is
+expanding into a new market and has no current Conversational Agent
+architecture. And a company that is already a Google Cloud customer but wants to
+leverage CES tools for internal FAQs. There are many advantages to being a
+greenfield customer. To start with, greenfield customers have a clean slate. As
+a greenfield customer, you’ll start with a blank canvas with minimal
+restrictions from existing systems or processes. This freedom allows for
+innovative solutions, and the ability to implement best practices without being
+constrained by the past. Additionally, greenfield environments foster agility,
+allowing them to move and iterate quickly due to the lack of legacy systems.
+This enables rapid experimentation and adaptation to changing requirements. In
+some cases, greenfield customers present larger opportunities. Without existing
+customer relationships or sales history, there is potential for significant
+growth and expansion. However, there are also disadvantages to being a
+greenfield customer. Defining the scope of a greenfield project can be a
+challenge. Without established parameters, it may be difficult to set clear
+goals and measure success. Greenfield customers often face data readiness issues
+as there may not be sufficient historical data to support decision-making.
+Furthermore, finding skilled resources can be difficult in greenfield
+environments. You may need people with specific technical expertise or domain
+knowledge that is not yet widely available. Next, let’s analyze the same
+information for brownfield customers. Some brownfield example use cases are: A
+Fortune 500 company that has an existing Conversational Agent structure already
+integrated into legacy systems A consumer goods company that wants to upgrade
+its customer Contact Center with new GenAI features and capabilities. And a
+large healthcare company that currently has a multi-channel experience outside
+of Google Cloud products. Some of the advantages for brownfield customers
+include the following. Brownfield customers benefit from existing
+infrastructure. You can leverage established systems to implement new features
+and capabilities, which saves time and resources compared to building from
+scratch. Brownfield environments also offer the opportunity to work with real-
+world data. You can experiment and iterate rapidly, using production data to
+validate solutions and drive improvements. Typically, brownfield customers have
+a deep understanding of their business. This existing knowledge base can be
+invaluable in defining requirements and designing solutions that truly meet
+their needs. There are also disadvantages with brownfield Customers. Integrating
+with legacy systems can be a major challenge. Outdated or incompatible systems
+may create complexities and slow down development. In brownfield environments,
+you often encounter complex business logic built up over time. This can make it
+difficult to understand and modify systems without introducing unintended
+consequences. The risk of disruption can be higher when deploying changes in a
+brownfield environment. There is a greater likelihood of impacting existing
+systems or processes, requiring careful planning and testing. Part of the
+challenge when trying to identify greenfield versus brownfield use cases is
+related to the fact that conversational experiences never just leverage one
+platform or solution like Conversational Agents. Conversational Agents rarely
+works alone without calling Apigee or Pub/Sub or other Google Cloud products. As
+illustrated in this example diagram, when a user chats with a Conversational
+Agents chatbot, there are many systems and tools that interact with the front-
+end and back-end systems to create a seamless experience. The “customer-client”,
+“chat router”, and “back-end CRM” could be different types of systems, but
+ultimately they are connecting the user with the enterprise data and
+Conversational Agents to create a conversation. In this example, the chat
+application is attached through multiple layers of “UI” engines and platforms,
+integrating different cloud solutions. So you must understand all of the
+components to the delivery. To summarize, determining whether a client is
+considered greenfield or brownfield requires a deep understanding of the client
+infrastructure and depends on the use case. Most enterprises will have both
+greenfield and brownfield use cases.
