@@ -1,0 +1,36 @@
+VIDEO TRANSCRIPT
+==================================================
+
+Contact Center AI services are the building blocks that power an AI driven
+Contact Center. In order to leverage these services, an underlying Contact
+Center platform is needed. In this topic, you’ll explore a high-level overview
+of the available integration options with CES and the choices that customers
+have when wanting to adopt CES services. First, some background. In 2019, Google
+Cloud started working with the leading ISVs to enable integrations between their
+platforms and Google Cloud’s Contact Center AI services. This allowed customers
+to easily integrate with Genesys, NICE, Avaya, Cisco, Five9, and many others. It
+resulted in customers being able to add advanced conversational AI capabilities
+to their existing traditional contact center infrastructure. For many, this
+extended the life of their existing contact center solution. However, this
+integration can be suboptimal when it comes to operations, observability, and
+end-to-end serviceability. That’s what originated the demand for a fully
+managed, end-to-end Google Cloud solution for Contact Centers operations. That
+solution is called Contact Center as a Service, or, often referred to as, CCaaS.
+Google Cloud's own offering for a modern, AI-powered Contact Center as a
+Service. Customer Engagement Suite or CES works hand-in-hand with Conversational
+Agents, Agent Assist for real-time guidance, as well as Conversational Insights
+to understand contact center analytics, customer sentiment and trends. It also
+works well with all the most popular CRMs and supports multiple channels such as
+voice, mobile and web chat, SMS, social channels and email. CES is a part of
+CCaaS. The CCaaS is a great option to pursue for streamlined setup and quick
+results, and provides integrations with OEM partners. Your choicebetween
+implementing n ew infrastructure and retaining your existing contact center
+solution will directly influence the range of options and strategies available
+to you. Let’s go over the different options. You can use CES if you’re seeking a
+new Contact Centeras a Service platform, or full Google solution. You can start
+with Google Cloud CES today and retain the option to easily switch platforms in
+the future, by opting for CES “over the top”, which adds CES solutions AI
+capabilities to an existing platform. Lastly, as a third option you can leverage
+is CES’s integration with OEM partners if you want to retain your existing
+contact center infrastructure Ultimately, the choice resides with you and your
+customers based on existing needs and circumstances.

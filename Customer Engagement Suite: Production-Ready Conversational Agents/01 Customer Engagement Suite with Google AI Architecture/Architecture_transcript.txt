@@ -1,0 +1,64 @@
+VIDEO TRANSCRIPT
+==================================================
+
+Welcome to the course, Customer Engagement Suite, also known as CES with Google
+AI Architecture. In this course, we’ll explore several topics to help you
+succeed in designing, building, and maintaining your CES solutions
+architectures. The training will cover six key modules. You’ll start with CES
+resource management, where you'll learn about the infrastructure and resources
+needed to set the foundation for an effective and efficient Contact Center AI
+Architecture. Then, you'll go over the required steps to plan for the deployment
+of Conversational Agents, Agent Assist, and Conversational Insights. Finally
+deployment and operations will be addressed, in addition to the essential
+security and compliance practices. Let’s start with the Customer Engagement
+Suite resource management module, where you’ll explore architectural resourcing
+considerations for CES. The objectives for this module are as follows: Identify
+operational environments, and resourcing, and access considerations needed to
+implement CES Solutions. Review the integrations that can enhance CES solutions,
+in Google Cloud as well as third parties. Explore how CES fits into the Vertex
+AI stack. And finally, identify the advantages of leveraging Customer Engagement
+Suite, to take full advantage of Google Cloud resources. Let’s get started! This
+module consists of the following topics: Architecture, Operational environments,
+Access control, Google Cloud and third-party integrations, The Vertex AI
+ecosystem, and Customer Engagement Suite integrations Let’s start with the first
+topic. Several factors need to be taken into account when preparing to build or
+transform your Contact Center using the CES solutions. Asking some basic
+questions upfront can help determine the best resources to deploy to achieve
+your target architecture. The first question that needs to be asked is what
+solutions are in scope for your CES implementation? Are you looking to connect
+your customers with your staff, or with bots, or does your contact center need
+to be modernized? If so, consider using Contact Center as a Service (or CCaaS).
+If you only want to implement Conversational Agents, analyze historical chats
+with Conversational Insights or provide assistance to your human agents with
+Agent Assist, then use Customer Engagement Suite (or CES). The next question to
+ask is “Are you looking for assistive technologies that enable your staff to do
+an efficient and better job at resolving your customers' needs?” If so, consider
+using our Agent Assist capabilities. Maybe you’re looking for help with scaling
+up your ability for self serve in your call center and improving customer
+satisfaction without increasing your staffing levels? If so, consider
+implementing a Conversational Agent. Are you interested in performing deep
+analytics on how your customers are interacting with your Contact Center? If so,
+consider using Conversational Insights to derive customer, agent, and contact
+center Key Performance Indicators, or KPIs. The answers to these questions will
+help determine which resources you’ll need to support these solutions. And
+whether you’ll need special infrastructure to support the level of availability
+and resiliency you desire. Now, let's turn our attention to an essential
+consideration for organizing your CES resources, namely, the interconnection of
+your technologies. This is a critical aspect to consider as it will determine
+how seamlessly your CES components can communicate and share data. To ensure
+efficient and effective operations, you need to define the resources required to
+support your operational environments. Once you have a clear understanding of
+the resources needed, you can then begin to map out the interconnection of your
+technologies. Finally, it's important to consider how you will capture data from
+your CES solution to measure operational success. This data will be essential
+for tracking key performance indicators and identifying areas for improvement.
+What follows is an example of how the answers to these questions will show the
+extent of solution integration across the CES portfolio. As shown in the
+displayed diagram, a holistic CES solution can encompass a combination of:
+Telephony, Conversational Agents, and human Agent Assistive technologies. On top
+of these technologies, you can also leverage Conversational Insights to analyze
+your data, interact with APIs and the data layer, and connect with other
+services to round out and customize your solution. The needs of the business are
+ultimately what drives the decision around which solutions should be added to
+your CES infrastructure. So make sure to clarify those requirements and their
+expected impact up front.

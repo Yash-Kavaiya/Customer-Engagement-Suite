@@ -1,0 +1,37 @@
+VIDEO TRANSCRIPT
+==================================================
+
+The next topic focuses on how you can control access to CES services and APIs.
+It’s very important to follow best practices for access control to ensure your
+resources are well protected by following the principle of least privilege. The
+backbone of a robust access control system is Identity and Access Management, or
+IAM. IAM is a framework of policies and technologies that ensure the right users
+have the appropriate access to the right resources. With IAM, you can define who
+has permission to do what on which cloud resources. It also relies on the
+concept of roles. Roles are simply bundles of permissions that define what
+actions a user or service account can take on Google Cloud resources. That means
+a role might contain multiple, smaller permissions that allow actions such as
+viewing data, launching virtual machines, or changing firewall settings. Google
+Cloud offers a selection of predefined rolesto quickly address typical use
+cases. However, If you need very specific, fine-grained permissions, then you
+also have the flexibility to create custom roles best aligned with your security
+policies. At the beginning of your journey toward building a CES solution, we
+recommend that you create the following groups where relevant: If you’re
+developing Conversational Agents, the primary agent configurations should be
+managed by your developer operations team with its own role. Your conversation
+developers require the ability to edit flows. Similarly, anyone developing
+webhooks within the Conversation developers will need a variety of roles
+depending on which technologies you choose to use. The most common role the
+Webhook devs need is the Cloud Run Administrator role. However, they’ll also
+need to receive the Dialogflow Webhook Admins role so that they can configure
+agent webhooks. When you assign IAM roles to these groups, access to Cloud
+resources is granted to all the users who are members of it. It is important to
+note that the roles are still called Dialogflow roles even though we refer to
+the product called Conversational Agents. For Agent Assist, your developers will
+have both the Dialogflow Admin role and the PubSub Admin role, due to the
+importance PubSub plays in Agent Assist. When it comes to Conversational
+Insights, your data analysts typically receives the BigQuery admin and Contact
+Center Insights Editor roles. Please note that these are some of the main
+recommended roles, and your final list will vary depending on precise
+requirements and restrictions. Similarly, if you are deploying CES services,
+then assign the contact center AI platform Admin role..

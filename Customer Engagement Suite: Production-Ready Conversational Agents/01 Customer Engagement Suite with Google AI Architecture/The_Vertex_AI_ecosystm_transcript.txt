@@ -1,0 +1,39 @@
+VIDEO TRANSCRIPT
+==================================================
+
+Now let’s zoom out to a bird’s-eye view of the Vertex AI ecosystem and
+understand where CES fits into it. As we’ve discovered, seamless integrations
+are key to fully unlocking the business value of your CES solutions. This is
+because they promote a comprehensive, end-to-end approach that removes the
+friction often experienced when building legacy contact centers. They do this by
+stitching different solutions together for incremental gains. When you partner
+with Google Cloud for your AI needs, you get a comprehensive technology offering
+built on Vertex AI. Vertex AI is a a machine learning (or ML) platform that lets
+you train and deploy ML models and AI applications. And you can also customize
+large language models (or LLMs) for use in your AI-powered application. The
+platform stack is multilayered and multipurpose. Starting at the bottom, there’s
+Google’s world class AI optimized infrastructure with GPU and TPU accelerators,
+fully integrated with Google Data Cloud. On top of it sits the Vertex AI Model
+garden, a one stop shop to find first-party, open source and third-party large
+language models. AI Platform leverages the resources from the Model Garden to
+provide end to end tooling to build, deploy and monitor Gen AI models and
+pipelines. Vertex AI Search and Conversation is the interface that developers
+can then lean on to access the AI platform resources to quickly and easily
+infuse chat, Gen AI, and search into their Enterprise applications. And lastly,
+AI Solutions such as Contact Center as a Service, and CES inside it, sit on top
+of the stack. They leverage the Vertex AI Search and Conversation to deploy
+chatbots and voicebots at scale. This means that contact center AI takes
+advantage of the full stack of resources and capabilities available in Vertex
+AI. In order to accommodate different use cases, VertexAI capabilities were made
+accessible both through the Vertex AI Applications console as well as out-of-
+the-box in CES. For example, a customer who has a high level of AI proficiency,
+may want to build highly customized use cases. These customers can take
+advantage of independent, or “build your own” components of Vertex AI and
+assemble them according to their needs, like: Model Garden, AI Platform, AI
+Applications, And third-party LLMs. Other clients may be after low code or no-
+code products ready for use in customer service use cases. In this instance, the
+best solution for them is to leverage off-the-shelf packaged products such as:
+The CES, Conversational Agents, Agent Assist, Or Conversational Insights. Vertex
+also offers a number of pre-built solutions for specific verticals or use cases
+like food ordering and financial services. Prebuilts allow you to leverage
+templates that just require fine tuning to adapt to specific use cases.

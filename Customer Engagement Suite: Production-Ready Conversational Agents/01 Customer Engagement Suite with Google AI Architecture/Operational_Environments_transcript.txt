@@ -1,0 +1,85 @@
+VIDEO TRANSCRIPT
+==================================================
+
+After gaining business buy-in on which solution can drive the most impact, you
+can start setting up your operational environments. When you build a CES
+solution, it is important to adhere to the strictest and least privileged access
+for the underlying resources, users and service accounts, to preserve the
+security and robustness of your architecture. This starts with knowing the
+difference between projects and Conversational Agents within Google Cloud, and
+how to implement the correct number of each for easy and consistent operations.
+Projects are a logical collection of Cloud resources that delegate Identity
+Access Management access controls. For CES specifically, the best practice is to
+create two projects: the first to host your non-production development and test
+resources, and a second project that contains your staging and production
+resources. Some users opt to have three separate projects, one for Development,
+one for Staging, and one for Production. Ultimately the decision lies with you
+or your client organization as long as it allows for a clear separation between
+production and development. Conversational Agents are a logical collection of
+interactions targeting fulfillments that help end users get answers to their
+questions. You usually only need one Conversational Agent to support all non-
+production environments. And a second Conversational Agent to support your
+production environments. Creating more than two Conversational Agents in the
+same project is generally required only if you have a need to handle
+interactions for completely different types of users or lines of business. If
+two Conversational Agents are targeting different types of end users and are
+being developed or operated by different teams, you should consider placing them
+in separate projects to manage their access controls independently. This is
+usually done to manage access controls, when different teams manage the
+Conversational Agent development and operations. This will prevent cross-
+Conversational Agent access. Lastly, please note that Conversational Agents are
+often referred to simply as “agents”. So when you hear the term “agent” from a
+resource perspective, keep in mind that it always refers to Conversational
+Agents rather than human agents. The next critical decision to be made in the
+set up of a new operational environment is deciding between public and private
+connectivity between clients and the Conversational Agents API. If you use
+Public methods, you do not need to set up any additional infrastructure. Your
+Conversational Agents client will simply connect to a Conversational Agents API
+endpoint, which is public. Note that when you use this public API endpoint, it
+only means that the API address is accessible via the internet. However, the
+communication is encrypted with Transport Layer Security (or TLS) and uses a
+service account and OAuth credentials for authentication and authorization.
+Alternatively, Private communication requires the configuration of a private
+interconnection to a Google Cloud VPC. This process is a bit more complex than
+the Public communication, requiring Private Service Connect for Google Cloud
+APIs to the VPC, which ensures the IP address for the Private Service Connect
+can reach the customer’s private network, and, the addition of Conversational
+Agents hostnames to DNS that point to the Private Service Connect IP address.
+Ultimately the decision lies with you or your clients, and the specific
+circumstances of the implementation. Most Conversational Agent implementations
+rely on public communication, while those in specific industries or locations
+might opt for private connectivity. The diagram that is displayed now shows an
+example of how both public and private communications can flow between end
+users, Conversational Agents and human agents. Let’s zoom in and break this down
+to go over the main aspects. In this example, we see 2 different sites, one
+located in a customer on-premises location and the other in Google Cloud. If the
+customer on-premises location cannot use Google’s public API endpoints, they’ll
+need to set up a private interconnect. The private interconnect is a physical
+fiber optic connection between both data centers. In the Google Cloud project,
+you will then need to set up a Private Service Connect to communicate with
+Conversational Agents. An internal DNS server is also required to resolve the
+Conversational Agents hostnames to the organization’s Private Service Connect IP
+address. Let's fill in some details about how this can work in your environment
+by taking the example of a Conversational Agent that’s to be implemented within
+the solution. As was already mentioned, Conversational Agents has public API
+endpoints and can use TLS, OAuth, and VPC Service Controls to ensure privacy and
+security. This is usually the fastest way to send requests to Conversational
+Agents, and it doesn't sacrifice security. However, in environments where
+private connectivity is a must or you want additional network bandwidth between
+your data center and Google Cloud, you can leverage a private Interconnect to
+access Conversational Agents’ APIs. If Agent Assist is in scope, then you’ll
+need to determine the following: Are you running everything on Google Cloud with
+Contact Center as a Service (or CCaaS)? If so, then this system will manage
+sharing the conversation utterances to Conversational Agents and it will
+automatically surface information to your human agent based on the system's
+configuration. Alternatively, are you implementing a hybrid approach with an on-
+premises Contact Center with an integration with CES on Google Cloud? If so
+you’ll have to make sure that an integration exists to send the data back to
+CES. If Agent Assist is not in the solution’s scope, then the incoming audio
+stream must be routed directly to the Conversational Agent. There are two ways
+to send the audio to Conversational Agents: The first option is to send gRPC
+requests to the Conversational Agents APIs. This involves using one of
+Conversational Agents’ gRPC APIs designed to handle audio input. Available APIs
+include: Analyze content, Detect intent, Streaming Analyze Content, and
+Streaming Detect Intent. Another option is to use the SIP Endpoint provisioned
+by the Google Telephony Platform (or GTP).

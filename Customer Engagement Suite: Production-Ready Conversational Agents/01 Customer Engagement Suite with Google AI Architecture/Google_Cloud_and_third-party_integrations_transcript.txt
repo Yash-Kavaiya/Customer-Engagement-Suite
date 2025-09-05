@@ -1,0 +1,43 @@
+VIDEO TRANSCRIPT
+==================================================
+
+Next is a high level overview on how CES solutions integrate with other Google
+Cloud and third-party services. When building the operational readiness of your
+target infrastructure, keep in mind that there are several Google Cloud services
+beyond what is immediately available in CES.v These services can greatly
+complement and support CES solutions. The most popular are: Cloud Logging, Cloud
+Monitoring, BigQuery, Looker Studio, Sensitive Data Protection with the Cloud
+DLP API, Cloud Functions, And Cloud Run. Let’s briefly explore each of these
+services. Cloud Observability is important to keep a pulse on the performance of
+your CES solution. Cloud Logging supports your observability needs by enabling
+you to capture log information from your cloud resources. This can greatly
+enhance your ability to monitor your Conversational Agent interactions. Cloud
+Monitoring helps you collect and observe important metrics, events, and
+metadata. Such information is important when looking at the performance of CES
+solutions and other associated components. The most common metrics observed are
+error rates and latency, but many other Key Performance Indicators (or KPIs) can
+be configured. BigQuery helps you build data warehouses when you need
+interaction logging and analytics for your CES solution. This can greatly
+advance your ability to adapt, maintain and evolve your CES solution. BigQuery
+data can be easily viewed with Looker Studio, which can help you create reports
+and visualize your data. This is exceptionally important when you want to
+monitor performance of the Conversational Agent or other CES services. Sensitive
+Data protection (and more specifically, the Cloud Data Loss Prevention
+component, or Cloud DLP), is a service that helps you protect and secure
+personally identifiable information, or PII, in your data. It works by
+identifying the particular PII based on a template and set of PII types. Once
+PII is identified, the data can be masked, replaced, or removed. Note that when
+implementing a Conversational Agent, it is very important to identify any
+parameters collected that would be considered PII to help prevent them from
+being logged. Finally, Conversational Agents can connect to systems in order to
+look up information or carry out transactions. These connections to your APIs
+are known as webhooks. Cloud Functions and Cloud Run are two popular options to
+get webhook code up and running and are often used with Conversational Agents.
+The popularity of these options is largely due to the ease of implementation of
+microservices, coupled with the elasticity to rapidly scale up and down. Other
+options include Kubernetes Engine, Compute Engine, App Engine, or Apigee.
+Another type of integration facilitated by CES solutions is with Telephony and
+Chat providers. These are key to any successful CES implementation.
+Conversational Agents provides one-click integrations with many popular vendors
+and technologies. And when one click integrations don’t exist, it allows for the
+development of a custom connection through CES APIs.
