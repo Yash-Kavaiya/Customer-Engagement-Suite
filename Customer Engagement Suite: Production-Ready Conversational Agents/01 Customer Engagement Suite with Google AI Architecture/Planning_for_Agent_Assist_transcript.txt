@@ -1,0 +1,76 @@
+VIDEO TRANSCRIPT
+==================================================
+
+Welcome to the Planning for Agent Assist module. The objectives for this module
+are as follows: List the key considerations when planning for Agent Assist, and
+Describe the Agent Assist components and workflow. These objectives will lead to
+an understanding regarding the key architectural considerations that need to be
+taken into account when planning to implement solutions with Agent Assist.
+First, what is Agent Assist? Agent Assist is a CES solution that empowers human
+agents through the power of AI. Imagine human call center agents equipped with a
+digital sidekick that offers in-the-moment assistance, guiding them through
+complex customer interactions. The core idea here is productivity. With Agent
+Assist, your human agents can handle more queries, more efficiently. Agent
+Assist speeds up your call center agents’ response time and lifts the quality
+bar of each customer and human agent interaction. A number of key decisions are
+required when you plan to implement Agent Assist in a contact center. In order
+of priority, the decisions include: What Agent Assist features will be used? How
+will input chat or audio be sent in to Agent Assist? How will responses be
+presented to human agents on their Agent desktop? And lastly, how does Agent
+Assist integrate with other Google Cloud components and CES solutions? Let’s
+explore at a high level how you can answer these questions. Agent Assist offers
+a powerful suite of features to enhance the level of service that your human
+agents can provide to your customers. The features include: Smart Reply and
+Smart Compose, which streamlines chat interactions by proposing accurate and
+contextually appropriate responses, saving precious time for both agents and
+customers. Generative Knowledge Assist, which provides agent-facing Gen AI
+Agents, and proactively surfaces generative answers with relevant knowledge
+articles. Baseline LLM Summarization offers real-time abstractive call summary
+with customizable focus areas and writing styles. Sentiment Analysis allows you
+to better understand customer interactions at a deeper level by detecting the
+customer prevailing emotions (both positive and negative) during the
+interaction. And finally, the Live Transcription feature transcribes every word
+of the interaction between the customer and the agent in real-time. Let's break
+down how Agent Assist processes customer interactions and provides support to
+agents. First of all, input can come in the form of chat or voice. Let’s
+understand the chat integration process first. The customer’s chat client and
+the Agent desktop are both participants in the conversation. The chat backend
+server, pictured here as the the customer serving stack, integrates with Agent
+Assist using Conversational Agents APIs. In the first step, the customer
+initiates a text chat, which is then transmitted to the API via the Customer
+serving stack. Following this, transcripts and recommendations are relayed from
+the API to the customer serving stack based on the input text. Finally, in the
+last step, the customer serving stack transfers the information to the Agent
+desktop. Now let’s view the second type of input integration, which involves the
+integration process for voice input. This method offers two approaches, namely,
+one through gRPC-based API integration, and the other via SIPREC-based
+integration. To integrate Agent Assist using gRPC, first establish a
+Conversation Profile and initiate the conversation using the Conversational
+Agent APIs. Then define participants and their roles (HUMAN_AGENT,
+AUTOMATED_AGENT, or END_USER). To enable real-time transcriptions for the
+customer or human agent, utilize Conversational Agents’ StreamingAnalyzeContent
+method to transmit their audio stream. This process will seamlessly provide
+real-time transcriptions and enable Conversational Agents to generate relevant
+suggestions for the agent. Another type of voice input integration is
+facilitated through a SIPREC endpoint, which is a protocol you can use to
+establish recording sessions and report metadata. When a customer calls a
+company's support line, the Session Border Controller or SBC, can use SIPREC to
+fork a copy of the audio stream to the Google Telephony Platform or GTP. GTP
+forwards this stream to CES and Agent Assist, which analyzes the conversation in
+real-time using Speech-to-Text, also known as STT. Based on this analysis, Agent
+Assist generates relevant suggestions for the human agent. These suggestions are
+delivered to the agent's desktop application either through REST APIs or by
+subscribing to the relevant PubSub topic. We hope you now have a good overview
+of the two main ways of integrating customer infrastructure to Google’s Agent
+Assist. Let’s finally discuss what the end to end architecture of an Agent
+Assist Integration may look like. Though we have two ways to integrate voice
+input, here are some final suggestions for building an architecture for Agent
+Assist: Use border controllers to minimize the path between participants when
+managing calls that use human agents. And use Google Cloud’s SIPREC endpoint to
+duplicate conversation media streams being sent to Agent Assist. SIPREC offers
+reduced latency compared to gRPC API integration. Its global endpoint
+intelligently routes connections to the closest server, and regionalization
+further minimizes delays. This is especially beneficial for non-streaming gRPC
+APIs that send audio in bulk and the streaming API which sends audio in chunks.
+The primary advantage of SIPREC integration is that it allows for real-time
+forking and transmission of the audio stream to Agent Assist.

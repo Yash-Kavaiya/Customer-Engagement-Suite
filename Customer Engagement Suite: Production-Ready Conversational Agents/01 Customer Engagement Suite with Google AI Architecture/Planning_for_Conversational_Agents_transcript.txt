@@ -1,0 +1,90 @@
+VIDEO TRANSCRIPT
+==================================================
+
+In the next module, you’ll go through the infrastructure considerations required
+to plan for the deployment of Conversational Agents. The objectives for this
+module are as follows: List the prerequisite platform considerations needed to
+design Conversational Agents, and explain the key considerations to account for
+when designing Conversational Agents. When you start Conversational Agent
+deployment, keep in mind the following questions: First, what’s the scope? One
+agent or multiple agents? What data residency is needed? Do you need high
+availability and Disaster Recovery? What languages will your agent support?
+Which time zones? What Networking and Security architecture will you implement?
+Additionally, how will you maintain Data Privacy through the collection and
+storage of data? This training will provide you with the foundational knowledge
+to answer these questions. However, based on the channels where you plan to
+deploy your Conversational Agent, you should also consider the following
+questions: What channels will be supported? How can you design omni-channel? How
+can you support it? Why do you need session and context management for
+Conversational Agents and CES? And lastly, how do you design interactions? How
+can you mix predictive flows with Generative AI, such as data store agents and
+generative agents? Note that the answer to this questions does not necessarily
+have architectural impacts and it requires the introduction of advanced bot
+building concepts so they will be covered in detail in the learning path
+dedicated to Conversational Agent development. Let’s start by discussing
+availability. To achieve high service availability for Conversational Agents,
+there are two main approaches you could consider: First, you could employ
+multiple load-balanced regional agents. This strategy distributes traffic across
+multiple agents located in different regions. Second, you could simply use a
+global agent. This approach centralizes traffic through a single agent, offering
+simplified management. Let’s explore both options. Let’s consider a scenario
+where you might use multiple regional agents for high availability. In the case
+of a regional failure, you would fail over to a second regional Conversational
+Agents API endpoint that is healthy and can continue serving requests. However,
+using multiple regional agents introduces considerable, incremental complexity
+into your infrastructure and operations system. Let’s explore what this means.
+The first is Infrastructural complexity. It requires an L7 proxy to manage
+availability through health checks, and redirects the routes to the nearest
+available region. Additionally, it introduces Operational complexity, to keep
+the configuration for multiple regional agents in sync because the agents are
+deployed independently, so they have unique agent IDs. In light of these
+complexities, the most common configuration is using a single, global
+Conversational Agent to provide availability. A single, global Conversational
+Agent can route requests to the next available agent in the nearest available
+region. This is our recommended option, as this achieves high availability while
+minimizing infrastructure and operational overhead. The next key choice you need
+to make for your Conversational Agent deployment is about languages. This means
+understanding which languages your end users may speak and how many languages
+you would like your agent to support. For example, what if you were to deploy
+your agent to serve customers primarily based in Canada, where there are two
+national languages? In this instance, you may want to develop a Conversational
+Agent that is capable of answering queries in English and French. This means
+that you might have two different backend systems that need to be integrated, or
+as many that are locale or language-specific. You also need to understand how to
+support the multiple ways that your customers will access your CES solution.
+Some examples of these different channels include: Chat from the web, Chat from
+a mobile app, Chat from a text messaging service, Voice services like Avaya and
+Twilio And more. Sometimes, your contact center design needs to use more than
+one channel at a time. This is where omni channel comes in. For example, you can
+support both chat and voice channels simultaneously. To do so, you need to:
+Decide how to route each channel, and optimize their responses Determine your
+web chat framework and webhook integrations. And lastly, integrate your backend
+system with other relevant systems, such as customer relationship management and
+ticketing. To enhance session management and data analysis, we suggest storing
+session information within your middleware, in addition to using Conversational
+Agents. This strategy enables you to leverage stored session data for reporting,
+analytics, and advanced features such as session restoration. For instance, you
+can utilize a tool like Cloud Firestore to save a well-organized No-SQL document
+comprised of key session attributes, which can serve as the foundation for the
+development of future advanced features. Examples of some of the attributes are
+Conversation profile, session ID, STT & TTS parameters, turns, participant, call
+timestamp and direction of phone calls To support a consistent omni channel
+experience, consider using a central location to manage user data and
+conversation history in one place. Omni channel systems might be more
+challenging to build, but they can offer a superior customer experience over
+single channel systems. Lastly, regardless of whether your CES solutio interacts
+with your customers by text or voice, it is important that it handles sensitive
+data very carefully when asking for user input (for example, during user
+authentication). Some user input is subject to compliance scrutiny if classified
+as Payment Card Industry, or PCI; or Protected Health Information, also known as
+PHI. Examples of sensitive data include: Name, Address, Phone Numbers, Email
+address, Health information, And credit card information. To help protect
+sensitive data, you can use tools like Sensitive Data Protection and the Data
+Loss Prevention API to remove personal identifiable information from your data
+and comply with privacy laws and regulations. In addition, you need to
+understand how this sensitive data is sent to other APIs, and if the data in
+transit needs additional encryption beyond standard TLS. In this topic, you
+explored considerations such as agent availability, language, channels, and
+input validation. Later you’ll learn about other important deployment, security,
+and compliance topics that are also important for Conversational Agents, but
+first, let’s consider planning for other key CES components.
