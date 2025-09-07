@@ -1,0 +1,74 @@
+VIDEO TRANSCRIPT
+==================================================
+
+In this topic, we’ll cover the key architectural considerations required when
+planning for the implementation of Conversational Insights. The objectives for
+this topic are as follows: Explain the preliminary decisions required to plan
+for an Conversational Insights implementation, Describe the Conversational
+Insights key features, Explain how the Conversational Insights key features can
+be integrated with Conversational Agents, Agent Assist and other Cloud
+components. And finally, list the target user personas who obtain the most value
+leveraging Conversational Insights. Let’s dive right in! When planning for a
+Conversational Insights implementation, it’s important to ask yourself four key
+questions: First, what problem does Conversational Insights solve for my
+organization? Next, what features will be most valuable for my use cases?
+Thereafter, how does Conversational Insights integrate with other Google Cloud
+components and other CES solutions? And finally, which user personas does
+Conversational Insights solve for? Contact Centers generate large amounts of
+data on a daily basis in the form of call recordings, chat transcripts, and
+conversation metadata. These data sets are a rich source of crucial information,
+but extracting insights out of this large amount of data can be a daunting task.
+This is where Conversational Insights can offer significant value for Contact
+Center management. Conversational Insights uses Google’s Large Language Models
+(or LLMs) to transform contact center data from insights into action. Here’s how
+Conversational Insights works: First, input data is uploaded in the form of
+audio recordings or chat transcripts. Conversational Insights then converts the
+audio files to text, and sends the chat and audio transcripts to Sensitive Data
+Protection for processing. Within Conversational Insights, information can be
+extracted, summarized, analyzed, and highlighted to inform various metrics, such
+as customer satisfaction, and agent quality. Topic modeling is for discovering
+various topics or areas of conversations (also referred to as “call drivers”)
+between contact center agents and end users. Highlighters capture relevant
+segments of a conversation that apply to a particular area of interest. A Smart
+highlighter is pre-configured with a set of phrases such as: AUTHENTICATION
+INFO, CHECK ISSUE RESOLVED, and CONFIRM ISSUE RESOLVED, while custom
+highlighters can be created to capture any custom keywords or segments. While
+analyzing the conversation, Conversational Insights provides sentiment analysis
+and LLM summarization of a conversation. It also extracts important entities
+such as price, model number and so on. The Conversational Insights console also
+enables users to search any conversation based on: transcript keywords, agents,
+metadata, topics, highlighters, summarization, entities and more. This data can
+then be leveraged to take action, such as providing agent coaching, informing
+the development of a Conversational Agent, or generally improving contact center
+workflows. So how does this magic work behind the scenes? There are multiple
+ways to ingest conversations into Conversational Insights. There is a live path
+that ensures that as soon as conversations are completed in Conversational
+Agents or Agent Assist, they are ingested into Conversational Insights
+automatically. Integration between CES and Conversational Insights can also be
+enabled. This sends audio files or transcripts to a Cloud Storage bucket, which
+can be used later by Conversational Insights. Conversations can also be ingested
+by directly uploading the audio files or transcripts in Cloud Storage bucket and
+then importing them when required within Conversational Insights. All the paths
+to ingest conversations into Conversational Insights use Speech-To-Text for
+transcription and Sensitive Data Protection for data redaction. Once
+conversations are ingested, the following can be applied: Topic modelling, Smart
+and custom highlighters, Sentiment analysis, Summarization, Entities extraction
+and more features into Conversational Insights. Thereafter, the conversations
+can be exported into BigQuery to connect with a custom dashboard on Looker. The
+exported conversations in BigQuery can also be used as data sources to build ML
+models on Vertex AI. The second persona is the Contact Center Operations
+Manager. Their goal is to predict workforce needs, and to ensure that staff and
+tools are in place to handle call center volume and objectives. Their pain
+points include forecasting and scheduling. Their desire is to use precise AI-
+based planning to reduce burnout, and to assign the correct training courses to
+staff members who need them. Topic modelling, along with metadata features like
+turn counts or conversation length, are great features that appeal to this
+persona. The last persona is the Agent Supervisor. Their goal is to ensure that
+agents handle conversations effectively and meet contact center goals. Their
+pain points are real-time awareness of agent performance, personalized coaching,
+and agent burnout. The Agent Supervisor wants to use personalized data to help
+individual agents improve and boost job satisfaction. Therefore, they’ll benefit
+greatly from Conversational Insights’ ability to generate a conversation
+summary, create a mapping of agents and topics successfully handled over time,
+and finally, highlight important parts of a conversation, for example when an
+agent correctly verifies a customer's account information.
