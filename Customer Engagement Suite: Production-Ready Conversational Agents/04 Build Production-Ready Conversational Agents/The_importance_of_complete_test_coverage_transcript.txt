@@ -1,0 +1,45 @@
+VIDEO TRANSCRIPT
+==================================================
+
+It’s critical to have a complete test coverage during the development lifecycle
+of your agent, let’s evaluate the rationale behind this. Good test coverage
+enables you to detect issues and bugs at an early stage. By rigorously testing
+different aspects of your conversational agent, you can identify and resolve
+problems before they impact users. This proactive approach saves time and
+resources in the long run. Comprehensive test coverage directly contributes to a
+quality user experience. It ensures that the agent behaves as expected in
+various scenarios, leading to more accurate and helpful interactions with users.
+Each test case can validate specific functionalities of your conversational
+agent. Good test coverage means that all features, from basic to complex are
+tested and confirmed to work correctly; ensuring the conversational agent’s
+functionality aligns with your design goals. As you update or enhance your
+conversational agent, there's a risk of new changes impacting existing
+functionalities. Good test coverage helps prevent these regressions, ensuring
+that updates do not inadvertently break what was already working. In
+Conversational Agents, the conversation is managed through flows, so
+comprehensive testing can confirm that their logic is accurate. It also ensures
+that the conversation progresses smoothly and logically, based on user inputs.
+Good test coverage includes testing for edge cases as well – unusual or rare
+scenarios that may not be immediately obvious. Identifying and handling these
+cases ensures that the conversational agent is robust and can handle a wide
+range of user interactions. Finally, thorough testing helps improve the accuracy
+of your Natural Language Processing, or NLP model. By testing with diverse
+phrases, you can train your model to understand and respond to user inputs more
+effectively. As developers and testers, when you introduce new features to your
+agent in Conversational Agents, your top priority is to validate the new
+functionality and performance. This is where Test Cases come into play.
+Conversational Agents allows you to create, modify, and organize your Test
+Cases, forming a comprehensive suite that covers various aspects of your
+conversational agent interactions. But how do you measure the effectiveness of
+your test cases once built? This is where the Test Coverage functionality comes
+into the picture. Test Coverage in Conversational Agents, helps you understand
+the extent to which your test cases validate the functionality of your agent.
+It's a measure of how thoroughly your test cases assess the transitions,
+intents, and route groups, of the conversational agent behavior and responses.
+By analyzing your Test Coverage, you can identify gaps in your testing process
+and add new test cases where necessary. This ensures that your conversational
+agent is rigorously tested and ready to handle real-world interactions
+effectively. To increase the test coverage just add new test cases or modify
+existing ones to ensure that all transitions, intents, and route groups are
+thoroughly tested. Make sure to regularly review and update test cases to align
+with any changes or updates to your conversational agent design.

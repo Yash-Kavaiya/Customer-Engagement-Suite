@@ -1,0 +1,16 @@
+VIDEO TRANSCRIPT
+==================================================
+
+First, let’s discuss the Quality Hill Climbing process for testing
+Conversational Agents You are recommended to follow the quality hill climbing
+process when creating test cases. First, start by building a golden evaluation
+dataset, used by linguists and testers, to generate nominal conversations with
+the agent. These are the expected conversations, including any tool calls that
+the agent might perform. Second, establish the baseline by identifying relevant
+metrics and defining the appropriate situations for tool invocation. Use similar
+phrases to test semantic similarity, and run audio-based golden conversations to
+score the agent’s behaviour. Third, identify losses by clustering or labeling
+similar losses. Perform in-depth manual analysis of all conversations that score
+poorly and identify root causes by reviewing the prompt as well as tool inputs
+and outputs. Fourth, implement fixes to the identified root causes. The fifth
+and last step, is to retest, validate and establish a new baseline.

@@ -1,0 +1,9 @@
+VIDEO TRANSCRIPT
+==================================================
+
+Now that you have a good understanding of each layer of testing, let’s explore
+how to best use the Conversational Agents testing feature set to support them.
+In this module, you will learn to Implement the quality Hill Climbing process
+Build a golden evaluation dataset Establish a baseline using test cases Identify
+losses and perform root cause analysis Fix identified root causes Retest,
+validate and establish a new baseline Let’s get started.
