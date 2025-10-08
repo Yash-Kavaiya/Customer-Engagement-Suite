@@ -1,0 +1,19 @@
+VIDEO TRANSCRIPT
+==================================================
+
+In this module, you’ll analyze the Conversational Agents Quality Assurance and
+Deployment Lifecycle, where you will be provided with the tools to assess and
+ensure production grade quality of your conversational agent development.
+Additionally, you will also review the key tenets of an end to end deployment
+lifecycle using the capabilities available in Conversational Agents. The key
+focus areas of this module are quality assurance and the deployment lifecycle of
+Conversational Agents. Creating a strong testing strategy is fundamental to
+delivering high-quality bots. Conversational Agents includes specific features
+and tools to help you design and implement tests. Throughout this module, you’ll
+discuss those features, and learn how to build your very own test plan. This
+includes mapping out test cases and understanding the best way to integrate your
+tests into the development process. After your bot has been thoroughly tested,
+you’ll dive into the deployment lifecycle. Here, you’ll learn how to move your
+bot into upstream environments successfully. Finally, you’ll explore continuous
+integration and continuous delivery, also known as CI-CD, which ensures smooth,
+error-free automated deployments. Let’s get started.

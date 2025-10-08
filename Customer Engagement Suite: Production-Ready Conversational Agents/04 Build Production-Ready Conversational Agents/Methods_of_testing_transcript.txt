@@ -1,0 +1,171 @@
+VIDEO TRANSCRIPT
+==================================================
+
+Now it’s time to explore the various methods of testing a conversational agent.
+You will focus specifically on what methods options are most used, their
+purpose, what stage of development they occur in and who is responsible for
+administering each testing phase. Let’s dive right in! When thinking about
+methods of testing, it is important to consider the sequence and interaction of
+all the systems that engage with Conversational Agents and the customer. Other
+systems that interact with Conversational Agents typically include the
+following: The telephony Integration component, which handles seamless call
+transitions. The client services application, like a web or mobile application,
+which helps render messages for user interfaces. And lastly, the backend systems
+which provides more in depth information about a customer. It typically
+facilitates the ability to perform specific actions, like payments or updating
+the caller’s information. In this lesson, you will examine the testing methods
+directly related to Conversational Agents, which are focused on intent
+recognition, routing accuracy, and response generation. Let’s explore each of
+them. The most successful testing strategies in Conversational Agents are based
+on a four tiered approach: The first tier involves unit tests, while the second
+tierfocuses on integration tests. The third tier encompasses end-to-end tests,
+and the fourth tier addresses A/B tests. It is best practice for the development
+team to take responsibility for the first two types of testing: unit tests and
+integration tests, which occur earlier in the development lifecycle. The Quality
+Assurance team focuses more on End to End and A/B tests which occur closer to
+production deployment. Developers are responsible to ensure no tests cases are
+failing before and after any development work. They also have ownership to build
+new tests to check bot behavior as compared to the defined requirements of a new
+feature. Also, keep in mind that the degree of automation may decrease along the
+development lifecycle. Unit and integration tests are expected to be mostly
+automated for ease of confirming full coverage of utterances, the absence of
+regressions and the correct functioning of APIs. End to end and A/B tests will
+require a higher degree of manual effort to ensure more careful assessment of
+most complex use cases. Regardless of the stage of the development lifecycle,
+testing should be done in an environment as similar as possible to the
+production environment. There are two types of unit tests. Routing and NLU.
+Routing Unit tests ensure that the logical transitions between steps in a
+Customer User Journey function as expected. All pages and transitions should be
+covered by at least one unit test. As mentioned, this process should be owned by
+the development team that built those routes. Here are some key factors to
+consider when designing routing unit tests: Routing unit tests provide a way to
+prove that the logic of a specific unit performs correctly against functional
+requirements. They also provide developers with feedback about whether updates
+to the conversational agent have broken any existing behavior. Routing unit
+testing begins in the development team’s sandbox environment and it entails an
+exhaustive test of one module, segment, or application in isolation from other
+applications or solution components. Teams should ensure all happy paths have
+unit test cases developed. Some routing unit tests may include interactions with
+other units within an application. If a webhook is not available in the
+development environment, they can be mocked using Webhook Parrot. Natural
+language understanding, or NLU unit testing is the second foundational component
+of unit testing. This testing ensures that the NLU model for the conversational
+agent is performing optimally by correctly identifying the intent of diverse
+user utterances. This includes variations in phrasing, synonyms, and informal
+language. This type of testing covers intent recognition and entity extraction.
+Entities can include dates, locations, and product names from a wide range of
+utterances. Large volumes of sample utterances should be used to identify areas
+where the NLU can be fine tuned by adding, moving, or deleting training phrases
+from the model. A key factor in achieving full NLU coverage during unit testing
+is to ensure that the agent has appropriate responses for user inputs that is
+not expected at any given point in the customer user journey. This includes
+tailoring no-match responses at the page level to repeat the prompt or options
+they are being asked to select. Consider a use case where the Conversational
+Agent needs to determine which device a user is contacting customer support
+about. To accomplish this, the user must input the last 4 digits of the devices
+serial number. However, the caller could respond with “I don’t know”, “None of
+them”, or “All of them” . In order to reduce escalations on that page, the
+Conversational Agent designer will need to create intents to capture these types
+of user input and respond accordingly. While this level of detail can be planned
+for during the bot design phase, you will invariably encounter unexpected ways
+that users interact with your Conversational Agent. As new utterances that are
+not recognized by the existing intents on a page are discovered, they will need
+to be added as training phrases to the existing intents, or as training phrases
+to new intents that require different agent responses. Note that the majority of
+unit tests, both routing and NLU, can be successfully executed in the
+Conversational Agents sandbox with the appropriate governance and
+configurations. A best practice is to ensure a zero failing test cases policy
+before and after starting any development work. This also helps during
+regression testing to identify which test cases require fixing. Next is
+Integration system testing. The objective of this testing is to discover errors
+in the interfaces between the components and to verify that the modules at each
+level work together. Integrated system testing is also generally expected to
+validate as much of the full spectrum of the end-to-end application flows as
+possible. This will generally include invocations to services, applications,
+systems, and components which are external to the application or organization in
+which the Integrated System Testing team resides. Generally, developing in an
+environment as similar to production significantly eases Integrated System
+Testing. Integrated System Testing should be done by the development team where
+possible. Examples include Dual-tone multi-frequency, also known as D-T-M-F, or
+numerical input, barge in, and webhook timeouts. Developers should also ensure
+full coverage of test cases that require telephony integration. End to end
+testing, or User Acceptance Testing, U-A-T for short, allows the quality
+assurance team to ensure that all the customer experience requirements are met
+and the Conversational Agent can react to real world scenarios. This is
+accomplished by testing the whole catalog of customer user journeys and by
+interacting with the Conversational Agent adversarially. Like integration
+testing; End to End Testing in a production-like environment significantly eases
+U-A-T testing as well. The last, most common type of testing in Conversational
+Agents is A/B Testing. This is the final phase of the certification process
+prior to exposure to live customers. A/B testing is a UX methodology that
+involves a randomized experiment to compare the performance of two systems or
+conversational experiences to verify which versions better meets the functional
+requirements outlined in the project scope or specifications. In this case, you
+may want to compare two conversational experiences through A/B testing. The
+first comparison involves the I-V-A legacy experience against the newly
+developed experience created with Conversational Agents. The second comparison
+looks at the customer experience managed by a live agent versus the newly
+developed experience built through Conversational Agents. The objective is to
+demonstrate an improvement in the call handling experience. This phase is
+generally managed by the Quality Assurance team. The diagram shows the
+sequencing of the four types of testing in the development lifecycle and the
+environments in which they typically occur. In the development environment you
+will have unit and integration testing. Additionally, in the QA environment you
+will have end to end testing, while A/B testing reside in the pre-production
+environment. As mentioned, performing these tests in an environment as close as
+possible to production is very important, especially for integration and end to
+end testing because it allows you to get more accurate feedback regarding issues
+that could potentially arise in production. Where a similar configuration to the
+production environment is not possible, a mitigation plan should be in place to
+minimize risks. One option is to use mock webhooks or mock systems. Another
+option is to release small batches of changes to a limited number of users to
+closely monitor their impact in production. In addition to the foundational
+testing phases already discussed, which are performed regularly during the
+development lifecycle, there are additional testing strategies that can be
+leveraged regularly or ad hoc. This assures the agent is production ready at
+launch, performs as per service level agreement, and has no regression.
+Typically you’ll notice these types of testing managed outside of Conversational
+Agents in custom tooling. Design testing ensures that the correct intents are
+being invoked with the intended utterances in specific scenarios to end users,
+providing feedback on the UI experience. These types of tests are generally
+executed by the design team in the Dev environment. The design teams consists of
+the conversational architects that define the conversational taxonomy and
+implement the agent flows within Conversational Agents. Performance testing, or
+telco infrastructure test, is normally performed by a team of architects, telco
+engineers, and telephony engineers in QA or pre-production. They assess the
+performance of the Conversational Agent and other infrastructure components
+under varying loads. This includes testing response times, accuracy under load,
+and the system's ability to handle multiple simultaneous interactions.
+Regression testing assures that the existing features still function
+appropriately after new features are added or updated. As previously mentioned,
+the Quality assurance team is responsible to assess the absence of regressions,
+while performing end to end or UAT testing in QA and pre-production
+environments. Adversarial testing is another type of testing performed when
+assessing the end to end performance of the system by the QA team in the QA or
+pre-production environment. It deliberately tries to cause the agent to fail in
+order to identify new vulnerabilities or areas of improvement that need to be
+implemented to prevent escalations. Failover and recovery testing assesses how
+the agent handles and recovers from system failures, as well as its ability to
+maintain data integrity during such events. It can be performed by the QA team,
+when needed, in the QA and pre-production environment. Lastly, Beta testing can
+be performed prior to a full launch. This allows the agent to be tested in its
+full implementation without risking exposure of defects to a wide audience. Once
+all testing activities are complete, it is important to assess the results both
+at the development and QA level. Conversational Agents has a test case interface
+that can be leveraged to assess the testing results at a high level. If you
+require more customization and dashboarding capabilities, you have the option to
+develop your own test running scripts and visuals. As the last step in the
+creation of your testing strategy, it is important to define a tracking system
+for your testing results. This will allow you to keep a regular pulse on the
+robustness of your plan. Let’s evaluate each phase of this process. This process
+starts with granular record keeping which includes the maintenance of a log that
+categorizes test case results for each release, including pass/fail status,
+associated defects, and any relevant observations. Keeping track of testing
+results helps in the analysis identifying trends, patterns, and recurring issues
+that inform root cause analysis and improvement strategies. Test results can
+inform a feedback loop process from QA to the development team that iteratively
+improves the agent. Results can also be compiled for knowledge sharing in root
+cause resolution forums to help limit future occurrences using preventative
+measures. Having a robust testing strategy creates a virtuous cycle in your
+development lifecycle that promotes continuous improvement of the quality of the
+agent throughput.

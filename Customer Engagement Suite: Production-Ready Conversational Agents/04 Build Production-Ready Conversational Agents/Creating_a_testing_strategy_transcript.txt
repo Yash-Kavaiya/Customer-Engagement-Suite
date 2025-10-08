@@ -1,0 +1,68 @@
+VIDEO TRANSCRIPT
+==================================================
+
+Let’s start by going through the framework for creating a solid testing strategy
+for conversational agent development. This lesson emphasizes the importance of
+creating a solid testing strategy. Here you will learn how to adopt a customer
+user journey, or CUJ first approach to testing, before identifying ways to
+leverage different approaches to testing that depends on the needs and the users
+in the bot development lifecycle. Building conversational agents is particularly
+challenging due to the non trivial business requirements, the large amount of
+data involved as well as the number of stakeholders involved in the success of
+the initiative. In order to manage this uncertainty with confidence, a solid
+testing approach is needed to systematically assess the performance of the bot
+before every launch to production. Systematically assessing performance doesn’t
+mean checking the robustness of an isolated newly implemented feature, but
+testing the end-to-end performance of the agent in solving a customer issue by
+following a Customer User Journey “first” approach to testing. A customer
+journey is a depiction of the experience that a customer goes through to acquire
+the goods and services that they need. Whether that be completing a
+transactional task or just obtaining the answer to a question, traversing the
+end-to-end journey for a customer helps gain a better understanding of their
+needs, and can help businesses identify how to best satisfy them. Customer User
+Journeys, or CUJs, are a fundamental tool in software development to ensure
+production grade quality and readiness for a release. So what are the steps for
+the creation of CUJs? First, establish a finite catalog. Establishing a finite
+list of scenarios for what the customer experience should look like is critical
+in setting up a robust testing strategy. These scenarios should be defined and
+agreed upon by all stakeholders. This ensures the existence of a formal
+agreement between the Quality Assurance team and the rest of the program around
+what should be tested. Adopting a Customer User Journeys “first” approach to
+testing, provides a level of assurance that the core user journey
+functionalities were covered in the verification by the Quality Assurance team,
+prior to the sign off of every new release to production. So treat a set of
+explicit CUJs with testing protocols like a “contract” between development and
+QA which makes the testing strategy: Reproducible Deterministic and Gives you
+High Confidence that the experiences built work. The bottom line is, the more
+agreement around CUJs the lower risk of encountering problems close to
+production deployment. The second step to keep in mind while creating a Customer
+User Journeys catalog is prioritization. Customer User Journeys can be
+prioritized according to business needs, production traffic volumes, and
+complexity. When possible, the key driver should be production traffic. This is
+because some edge cases do not require as much attention compared to journeys
+that encompass a higher share of traffic. You need high confidence that your top
+Customer User Journeys work. Once prioritization is defined, a level of
+reporting can be generated around the catalog of CUJs. The Quality Assurance
+team should be able to generate reports around CUJs to highlight what was
+tested, which CUJ rendered the best test results and which had the most
+problems. Documenting “Failures” allows the development team to reproduce
+problems and resolve them. Successful tests are important as well, so that when
+encountering failures later, a call out can be made pointing at the time when it
+last worked. This is to make sure that once a functionality is fixed, it stays
+fixed. Once the CUJs catalog is built, a Requirements Traceability Matrix, or
+RTM for short, can help the QA team by providing a mapping between the Customer
+User Journeys steps and the test cases created. The goal is to have adequate
+test coverage for all requirements with as many variations as possible. The RTM
+provides insight into the coverage and acts as a checklist for the complete
+coverage of all items prior to every release by: Ensuring test coverage aligns
+with real user needs Helping prioritize testing efforts based on critical user
+paths, and Catching potential failures early in the development cycle. One last
+critical element to mention in the creation of a solid test strategy is
+interacting with the bot adversarially. This is one of the key responsibilities
+of the Quality Assurance during bot building which is often overlooked. The
+user's behaviour is not always friendly to the bot or consistent with the bot’s
+objectives. Therefore, having test cases configured in a way that allows you to
+identify where the bot may deviate from the customer's “happy path” to
+resolution enables you to catch problems early in the development lifecycle.
+This promptly rectifies them and provides you with the confidence to sign off on
+any new delivery.

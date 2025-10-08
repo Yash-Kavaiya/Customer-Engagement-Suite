@@ -1,0 +1,81 @@
+VIDEO TRANSCRIPT
+==================================================
+
+In the following lesson, you’ll delve into the details of each layer of the
+Conversational Agents testing strategy. You’ll learn how to implement unit
+testing, integration system testing, E2E testing, and lastly A and B testing. To
+get started, let’s analyze how to implement a unit testing strategy in
+Conversational Agents. As previously introduced, Unit tests can be broken down
+into two main categories: Route testing and NLU testing. Route testing is
+related to ensuring that various types of page transitions, conditional logic
+based transitions and intent recognition transitions, are functioning as
+expected. Conversely, NLU testing is the process of making sure that various
+user utterances are invoking the expected intents to trigger the appropriate
+agent responses and transitions. Let’s explore both types of tests, starting
+with routing. Route testing, also known as Partial Page Testing, helps target a
+specific issue that causes the agent to fail for a particular use case. This
+testing is typically limited to individual pages of a conversational agent in
+order to isolate and identify specific issues that are causing the agent to
+behave unexpectedly at that stage of the conversational flow. Examples of issues
+that can be discovered during route testing may be a parameter that is typed
+incorrectly or the user’s input prevents the page from transitioning as
+expected. This type of testing provides a lightweight approach to identifying,
+resolving, and testing reproducible bugs. In order to reach full coverage, each
+route on a page requires an explicit test case. The simulator also has
+functionality to expedite your route testing needs. If you need to test a route
+transition on a specific page, you can just instruct the simulator to begin the
+test on that page instead of the start page. This alleviates the need to work
+through the entire flow just to reach the one area of the conversational agent
+that you are currently testing. The second type of unit testing is NLU testing.
+NLU testing differs by assessing the efficacy or user utterances getting tagged
+to the correct intent on each page. NLU tests can also be conducted within
+Conversational Agents, however it is recommended to create custom scripting to
+test large batches of utterances. This helps to ensure accurate intent detection
+for potentially ambiguous utterances. NLU testing requires a wide variety of
+user utterances to be tested for their corresponding intent as per input page in
+Conversational Agents. Now that you have a better understanding of the
+importance that unit tests play in the development lifecycle, let’s unpack how
+to structure a test driven development strategy for Unit Tests. Test driven
+development is a core philosophy of the Conversational AI approach to
+conversational agent development. It promotes iterative testing throughout the
+development lifecycle of a conversational agent. Even though you will review
+this in the context of Unit tests, these principles could be easily extended to
+other types of testing. This philosophy is also coherent with the CUJ “first”
+approach to testing introduced earlier in aiming to stress the importance to
+verify the quality of your agent in every step of the development process, and
+in a way that aligns to the needs of the end users. Conversational Agents
+supports this philosophy by offering built-in test features to uncover bugs and
+prevent regressions from the design stage to post production CI/CD. The
+simulator can be used to test updates to the conversational agent as well as
+define golden test cases to run as an eval set when needed. The experiments
+feature can also be leveraged to deploy multiple versions of the conversational
+agent against live traffic. The first step of the process is to understand the
+requirementsand success criteria for the conversational agent you are testing.
+Before you start writing tests, clearly define what you expect your
+conversational agent to do. This includes understanding the different types of
+user inputs or intents, and the expected responses or actions from the agent.
+Once you have defined your requirements, you can start writing your test cases.
+It is best practice to start writing test cases before developing the actual
+features. For a conversational agent, these test cases can include different
+scenarios of user-agent interactions, how it handles context switching, or how
+it manages fallbacks. Next you can begin implementing the agent’s features. This
+involves defining intents, training phrases, parameters, responses, and
+fulfillment logic in Conversational Agents. Step 4 is where you start running
+the tests. The standard approach is to use the native menus in Conversational
+Agents, but you can also use automated scripts for running test cases through
+the API. Next is refactor and repeat. If tests fail, modify your agent's
+configuration and logic until all tests pass. Then, refactor your code to
+improve efficiency, readability, and maintainability. After refactoring, run the
+tests again to ensure nothing broke during the process. Repeat this cycle as you
+continue to develop new features. After you have iterated on the conversational
+agent development and the test cases are passing, you can move on to continuous
+Integration. This will allow you to automatically run tests whenever changes are
+made to the conversational agent, ensuring consistent quality and functionality.
+As a final step, it's crucial to establish a strong monitoring and feedback
+system. This system should continuously track the agent's performance and gather
+user feedback and conversation logs. This data will pinpoint areas where the
+agent can be improved. Use this information to write new tests that target those
+areas of improvement. These tests should be integrated into a test-driven
+approach for ongoing development. Having a feedback loop process in place,
+allows you to instate a virtuous cycle in your development process that feeds
+itself and iteratively improves the performance of your agent.
