@@ -1,0 +1,323 @@
+\documentclass[aspectratio=169]{beamer}
+\usepackage[utf8]{inputenc}
+\usepackage{hyperref}
+\usepackage{tikz}
+
+% Google Color Palette
+\definecolor{GoogleBlue}{RGB}{66, 133, 244}
+\definecolor{GoogleRed}{RGB}{234, 67, 53}
+\definecolor{GoogleYellow}{RGB}{251, 188, 5}
+\definecolor{GoogleGreen}{RGB}{52, 168, 83}
+\definecolor{FooterBlue}{RGB}{66, 133, 244}
+
+% Theme Settings
+\usetheme{Madrid}
+\usecolortheme[named=GoogleBlue]{structure}
+
+% Custom Footer
+\setbeamertemplate{footline}{
+  \leavevmode%
+  \hbox{%
+  \begin{beamercolorbox}[wd=\paperwidth,ht=2.5ex,dp=1.5ex,leftskip=1ex,rightskip=1ex]{FooterBlue}%
+    \color{white}
+    \begin{minipage}{0.33\paperwidth}
+      \fontsize{7}{8}\selectfont
+      \href{https://easy-ai-labs.lovable.app/}{\textcolor{white}{Easy AI Labs}}
+    \end{minipage}%
+    \begin{minipage}{0.34\paperwidth}
+      \centering
+      \fontsize{7}{8}\selectfont
+      \href{https://www.linkedin.com/in/yashkavaiya}{\textcolor{white}{Yash Kavaiya}}
+    \end{minipage}%
+    \begin{minipage}{0.33\paperwidth}
+      \raggedleft
+      \fontsize{7}{8}\selectfont
+      \href{https://www.linkedin.com/company/genai-guru}{\textcolor{white}{Gen AI Guru}}
+    \end{minipage}%
+  \end{beamercolorbox}}%
+  \vskip0pt%
+}
+
+% Custom Header
+\setbeamertemplate{headline}{
+  \leavevmode%
+  \hbox{%
+  \begin{beamercolorbox}[wd=\paperwidth,ht=2.5ex,dp=1.5ex,leftskip=1ex,rightskip=1ex]{section in head/foot}%
+    \usebeamerfont{section in head/foot}%
+    \insertframenumber{} / \inserttotalframenumber \hfill \insertsectionhead
+  \end{beamercolorbox}}%
+  \vskip0pt%
+}
+
+% Remove navigation symbols
+\setbeamertemplate{navigation symbols}{}
+
+% Title Page Information
+\title{\textbf{Unit Testing for\\Conversational Agents}}
+\subtitle{Best Practices \& Testing Methodologies}
+\author{Yash Kavaiya}
+\institute{Easy AI Labs \\ Gen AI Guru}
+\date{\today}
+
+\begin{document}
+
+% Custom Title Page
+{
+\setbeamertemplate{footline}{} 
+\setbeamertemplate{headline}{}
+\begin{frame}
+  \begin{tikzpicture}[remember picture,overlay]
+    % Background colored rectangles (Google colors)
+    \fill[GoogleBlue] (current page.north west) rectangle ([yshift=-3cm]current page.north east);
+    \fill[GoogleRed] ([yshift=-3cm]current page.north west) rectangle ([yshift=-6cm]current page.north east);
+    \fill[GoogleYellow] ([yshift=-6cm]current page.north west) rectangle ([yshift=-9cm]current page.north east);
+    \fill[GoogleGreen] ([yshift=-9cm]current page.north west) rectangle (current page.south east);
+  \end{tikzpicture}
+  
+  \vspace{1.5cm}
+  \begin{center}
+    {\Huge\textbf{\textcolor{white}{Unit Testing for}}}\\[0.3cm]
+    {\Huge\textbf{\textcolor{white}{Conversational Agents}}}\\[0.8cm]
+    {\Large\textcolor{white}{Best Practices \& Testing Methodologies}}\\[1.5cm]
+    
+    {\large\textcolor{white}{Presented by}}\\[0.3cm]
+    {\Large\textbf{\textcolor{white}{Yash Kavaiya}}}\\[0.3cm]
+    {\normalsize\textcolor{white}{Easy AI Labs | Gen AI Guru}}\\[0.5cm]
+    {\small\textcolor{white}{\today}}
+  \end{center}
+\end{frame}
+}
+
+% Section 1
+\section{Testing Lifecycle}
+
+\begin{frame}{Question 1: Test Automation in CI/CD}
+  \begin{block}{Question}
+    You will be able to automatically run tests when changes are made to the agent after completing which stage of the unit test driven development lifecycle?
+  \end{block}
+  \begin{itemize}
+    \item Continuous integration
+    \item Implement agent features
+    \item Refactor and repeat
+    \item Write test cases
+  \end{itemize}
+  
+  \begin{alertblock}{Correct Answer}
+    \textcolor{GoogleGreen}{\textbf{CHECK: Continuous integration}}
+  \end{alertblock}
+  
+  
+  \begin{block}{Explanation}
+    \small
+    Continuous Integration (CI) is the stage where automated testing is configured to run automatically whenever code changes are committed. This enables immediate feedback on code quality and helps catch issues early in the development cycle.
+  \end{block}
+\end{frame}
+
+\begin{frame}{Question 2: Test Result Tracking}
+  \begin{block}{Question}
+    Logging and categorizing test case results is part of which phase of tracking test results?
+  \end{block}
+  
+  
+  
+  \begin{itemize}
+    \item Knowledge sharing
+    \item Data driven analysis
+    \item Feedback loop
+    \item Granular record keeping
+  \end{itemize}
+  
+  
+  
+  \begin{alertblock}{Correct Answer}
+    \textcolor{GoogleGreen}{\textbf{CHECK: Granular record keeping}}
+  \end{alertblock}
+  
+  \vspace{0.2cm}
+  
+  \begin{block}{Explanation}
+    \small
+    Granular record keeping involves systematically logging and categorizing every test case result with detailed information. This provides a comprehensive audit trail and enables thorough analysis of test outcomes.
+  \end{block}
+\end{frame}
+
+% Section 2
+\section{Testing Methods}
+
+\begin{frame}{Question 3: A/B Testing Feature}
+  \begin{block}{Question}
+    What feature of Conversational Agents is used to conduct A/B testing?
+  \end{block}
+  
+  
+  
+  \begin{itemize}
+    \item Prebuilt components
+    \item Validations
+    \item Conversational Agents messenger
+    \item Experiments
+  \end{itemize}
+  
+  
+  
+  \begin{alertblock}{Correct Answer}
+    \textcolor{GoogleGreen}{\textbf{CHECK: Experiments}}
+  \end{alertblock}
+  
+  \vspace{0.2cm}
+  
+  \begin{block}{Explanation}
+    \small
+    Experiments is the built-in feature that allows you to conduct A/B testing in Conversational Agents. It enables comparing different versions of agent responses or flows to determine which performs better with users.
+  \end{block}
+\end{frame}
+
+\begin{frame}{Question 4: Module Testing}
+  \begin{block}{Question}
+    What testing method ensures that a single module of the agent is working correctly?
+  \end{block}
+  
+  
+  
+  \begin{itemize}
+    \item End to end testing
+    \item A/B testing
+    \item Integration systems testing
+    \item Unit testing
+  \end{itemize}
+  
+  
+  
+  \begin{alertblock}{Correct Answer}
+    \textcolor{GoogleGreen}{\textbf{CHECK: Unit testing}}
+  \end{alertblock}
+  
+  \vspace{0.2cm}
+  
+  \begin{block}{Explanation}
+    \small
+    Unit testing focuses on testing individual modules or components in isolation. It verifies that each unit of code performs as expected independently, making it easier to identify and fix defects at the component level.
+  \end{block}
+\end{frame}
+
+% Section 3
+\section{End-to-End Testing}
+
+\begin{frame}{Question 5: Full Stack Testing}
+  \begin{block}{Question}
+    Which form of end to end testing includes all components of the agent and its system integrations?
+  \end{block}
+  
+  
+  
+  \begin{itemize}
+    \item Focused journey
+    \item Full stack
+    \item Modular
+    \item Regression
+  \end{itemize}
+  
+  
+  
+  \begin{alertblock}{Correct Answer}
+    \textcolor{GoogleGreen}{\textbf{CHECK: Full stack}}
+  \end{alertblock}
+  
+  \vspace{0.2cm}
+  
+  \begin{block}{Explanation}
+    \small
+    Full stack testing validates the entire system from front-end to back-end, including all integrations with external systems. It ensures all components work together seamlessly in a production-like environment.
+  \end{block}
+\end{frame}
+
+\begin{frame}{Question 6: CUJ First Approach}
+  \begin{block}{Question}
+    What is the first step when following a "CUJ first" approach to testing?
+  \end{block}
+  
+  
+  
+  \begin{itemize}
+    \item Reporting
+    \item Create a catalog
+    \item Defining success criteria
+    \item Prioritization
+  \end{itemize}
+  
+  
+  
+  \begin{alertblock}{Correct Answer}
+    \textcolor{GoogleGreen}{\textbf{CHECK: Create a catalog}}
+  \end{alertblock}
+  
+  \vspace{0.2cm}
+  
+  \begin{block}{Explanation}
+    \small
+    CUJ (Critical User Journey) first approach begins by creating a comprehensive catalog of all critical user journeys. This catalog documents the essential paths users take through the system, which then guides test case development and prioritization.
+  \end{block}
+\end{frame}
+
+% Summary/Last Slide
+\section{Summary}
+
+{
+\setbeamertemplate{headline}{}
+\begin{frame}{Content Summary \& Follow for More Updates}
+  \begin{center}
+    {\Large\textbf{\textcolor{GoogleBlue}{Key Takeaways}}}
+  \end{center}
+  
+  
+  
+  \begin{columns}[T]
+    \begin{column}{0.48\textwidth}
+      \textbf{\textcolor{GoogleRed}{Testing Lifecycle:}}
+      \begin{itemize}
+        \item Continuous Integration enables automated testing
+        \item Granular record keeping tracks results
+      \end{itemize}
+      
+      
+      
+      \textbf{\textcolor{GoogleYellow}{Testing Methods:}}
+      \begin{itemize}
+        \item Experiments for A/B testing
+        \item Unit testing for module validation
+      \end{itemize}
+    \end{column}
+    
+    \begin{column}{0.48\textwidth}
+      \textbf{\textcolor{GoogleGreen}{End-to-End Testing:}}
+      \begin{itemize}
+        \item Full stack testing for complete integration
+        \item CUJ first approach starts with catalog creation
+      \end{itemize}
+    \end{column}
+  \end{columns}
+  
+  \vspace{0.8cm}
+  
+  \begin{center}
+    \colorbox{GoogleBlue!20}{
+      \begin{minipage}{0.9\textwidth}
+        \centering
+        
+        {\Large\textbf{\textcolor{GoogleBlue}{Follow for More Updates!}}}\\[0.4cm]
+        
+        {\large\textbf{YouTube:} \href{https://www.youtube.com/@genai-guru}{\textcolor{GoogleRed}{@genai-guru}}}\\[0.3cm]
+        
+        {\normalsize\textbf{LinkedIn:} \href{https://www.linkedin.com/in/yashkavaiya}{\textcolor{GoogleBlue}{Yash Kavaiya}}}\\[0.2cm]
+        
+        {\normalsize\textbf{Company:} \href{https://www.linkedin.com/company/genai-guru}{\textcolor{GoogleBlue}{Gen AI Guru}}}\\[0.2cm]
+        
+        {\normalsize\textbf{Website:} \href{https://easy-ai-labs.lovable.app/}{\textcolor{GoogleBlue}{Easy AI Labs}}}
+        
+      \end{minipage}
+    }
+  \end{center}
+\end{frame}
+}
+
+\end{document}
