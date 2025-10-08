@@ -1,0 +1,51 @@
+VIDEO TRANSCRIPT
+==================================================
+
+The last type of testing is A/B testing, commonly referred to as Experiments in
+Conversational Agents. As previously mentioned, A/B testing is a UX methodology
+that allows you to compare the performance of two or more systems or
+conversational experiences to verify which versions better meet the functional
+requirements outlined in the project scope or specifications. A/B testing can be
+accomplished in Conversational Agents by using the built-in experiments feature.
+To the greatest extent possible, development and testing should be done in an
+environment similar to the production environment, commonly referred to as pre-
+production. Experiments allow the development team to allocate a portion of live
+traffic to different flow versions. There are 8 common metrics used to monitor
+the performanceof these experiments in production. These metrics include the:
+Live agent handoff rate, which is the count of sessions handed off to a live
+agent. The session end-rate, that is the count of sessions that reached
+END_SESSION. Thirdly, the Total no-match count which refers to the total count
+of occurrences of a no-match event. Then, the total turn count, which is the
+total number of conversational turns. One end-user input and one agent response
+is considered a turn. The fifth metric is Average turn count which involves the
+average number of turns. Then, Contained is the count of sessions that reached
+END_SESSION without triggering other metrics below. Next is Callback rate, which
+is the count of sessions that were restarted by an end-user. And finally,
+Abandoned rate, which is the count of sessions that were abandoned by an end-
+user. These metrics can help you inform which experiment are best for your
+customer and we encourage integrating experiment data into your reporting. In
+this example, it is illustrated how these metrics show up in the Conversational
+Agents console. Green colored results suggest a favorable outcome, while red
+suggests a less favorable result. Notice that in some cases, higher or lower
+numbers are not necessarily better, the high abandonment rate or low abandonment
+rate. When you have a new version of an agent, or flow to test, begin by
+exposing it to a small percentage of the user traffic. If initial results are
+positive, you can gradually increase the traffic in order to provide a more
+statistically significant evaluation set. This set will either guide your
+decision to move forward with the new version, or revert to the existing agent.
+Also, if you have a need to expedite the testing process, Conversational Agents
+Experiments feature allows you to runmultiple experiments at the same time. A
+and B testing using the Experiments feature enabling designers to test out new
+ideas about what and how a conversational agent should handle specific
+circumstances or flows which may challenge conventional wisdom. Instead of
+relying on intuition, this feature can be greatly helpful to test out new
+theories and capture quantitative metrics to inform decision making. If initial
+experiments continue to show positive results as you increase the sample size of
+the user base exposed to the test version, increase the traffic percentage until
+you reach a 50-50 split. This will allow you to do an accurate assessment of the
+relative performance of the two versions. Once these metrics are collected in a
+controlled setting and their traffic percentages are equal, you can compare two
+pages or two flows to determine the degree to which the versions differ. A/B
+tests are a great way to foster a data-driven culture that can substantially
+help expedite the release process and ensure the best conversational experience
+for the user.

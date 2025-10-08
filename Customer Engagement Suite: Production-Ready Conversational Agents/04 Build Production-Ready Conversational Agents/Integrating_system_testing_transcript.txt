@@ -1,0 +1,56 @@
+VIDEO TRANSCRIPT
+==================================================
+
+Next, you will cover the Integration system testing. As a recap, the objective
+of this type of test is to ensure that your conversational agent works
+seamlessly with external systems it connects to. The most common type of
+integration to consider is how Conversational Agents connects with the end user.
+The platform offers many options for telephony and text based integrations that
+can be accessed natively For voice conversations specifically, you will evaluate
+dual tone multi-frequency, also referred to as DTMF, and barge-in. Webhooks are
+the most common integration test both in the voice and the chat channel. DTMF
+refers to the ability of the user to provide numerical input using the keypad or
+their device as an alternative to speaking the number to the agent. This can be
+useful in situations where there is background noise or collecting a long
+sequential string of numbers like an account number. In order to properly test
+that your DTMF is working, call the agent to verify the input recognition
+through the telephony integration that is being utilized for the project. You
+can design the agent response to the input collection to repeat what has been
+collected by referencing the DTMF entity. This not only helps with testing, but
+is a good practice to confirm to the end user that the conversational agent
+picked up is the correct information. This will also help avoid needing to
+review the speech to text transcripts to ensure the correct information is being
+collected. Prior to designing the test cases, let’s review two key best
+practices for your DTMF implementation. First you need to confirm that numbers
+such as “1” or “2” are not used as synonyms for the DTMF entity. This may cause
+conflicts if the page also collects other numbers. And secondly, use the name of
+the special characters such as “pound” or “star” in the entity to avoid erratic
+behavior. For example: dtmf_digits_pound Another unique voice consideration is
+when a user barges-in with their request while the conversational agent is still
+speaking. Barge-in enables end-users to interrupt an agent, allowing them to
+move along the flow more quickly if desired. Barge-in can be enabled on Agent
+level settings, flow level settings, and page level settings. Barge-in can be
+disabled on specific pages where there may be a need or legal require for the
+user to listen to the entire agent response without skipping. Since Barge-in is
+a telephony feature, you will need to call the agent through the telephony
+integration that has been implemented for the project in order to properly test
+its functionality. You will want to ensure that you have test coverage to test
+the areas of the agent where you want the barge-in option to be active, as well
+as testing the pages where you want to make sure that the user cannot skip the
+agent dialogue. Finally, you need to ensure that your webhook calls are prepared
+to handle failures as part of the Webhook testing integration testing. To test
+these failures, you must create intentional failure tests. You can create
+failure tests by using the test console’s parameter injection feature. This
+allows you to set parameter values to mimic various webhook failures at the
+beginning of the test case. When the webhook is invoked, the webhook service
+will read these specific parameters and trigger the expected failure. At the
+HTTP level, the webhook service could return any of the error statuses detailed
+in the table on the slide. Each error status code will trigger a different event
+in Conversational Agents. Your test cases should cover each of these different
+possible events. Remember that the goal of webhook testing is to ensure that
+every type of failure is handled in your webhook fulfillment code. Test cases
+will need to be created for all failure types handled within your code. Webhook
+failures can be simulated by setting session parameters to provoke them.
+Parameters can be set at the beginning of the test case through injected
+parameters, which allows the webhook service to read these specific parameters
+and then trigger the expected failure.

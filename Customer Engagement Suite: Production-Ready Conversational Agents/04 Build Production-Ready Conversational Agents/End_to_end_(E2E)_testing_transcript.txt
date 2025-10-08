@@ -1,0 +1,111 @@
+VIDEO TRANSCRIPT
+==================================================
+
+After unit and integration testing, the next type of testing you’ll focus on is
+end to end testing. Depending on the stage of bot development lifecycle you are
+in, end to end testing may have different connotations with respect to their
+scope and purpose. Let’s zoom in on the three types of end to end testing. Note
+that these are listed in order of complexity. First is modular testing. This
+subset of end to end testing focuses on an individual flow or component that is
+a subset of the entire customer journey. Then you have focused journey testing.
+This type of testing is concerned with testing an entire customer journey
+utilizing simulated inputs. And thirdly, Full-Stack testing, which encompasses
+all layers of the technology stack involved in the customer journey including
+integration with backend fulfillment systems. Next, you’ll discuss the details
+of each of these types of end to end testing. First is modular testing. As the
+name suggests, it is larger in scope than page testing as it encompasses an
+entire Flow from end to end. It’s purpose is to validate the logic and
+performance of individual flows. This makes modular testing ideal for testing
+specific features or updates in isolation from the rest of the agent. To perform
+modular testing, you need to go through a flow from its start to end, including
+the handling of intents, fulfillment, and transitions within the flow to test
+it’s holistic logic and functionality. Modular testing refers to a subset of end
+to end testing that limits the scope to a specific flow. This is useful when
+just a portion of the agent has been updated. It is important to consider that
+modular testing can miss issues related to context management when transitioning
+to other flows in the agent. The second type of end to end testing is referred
+to as focused journey testing. The purpose of focused journey testing is to
+provide early feedback on specific journeys and isolate problems within
+workflows for targeted debugging. These tests center on a single feature,
+critical process, or limited set of interactions within a user journey. In order
+to perform Focused Journey testing, you need to first select a user journey.
+Then, develop the test cases. Next, execute the tests with controlled inputs.
+And finally, analyze the results and report the findings for improvement.
+Focused journey testing is useful when there is a need for end to end testing a
+specific customer user journey within a conversational agent in isolation from
+other system issues. This can save time over full stack testing when you want to
+test a specific CUJ that has recently been updated without taking the entire
+scope of the agent into account. This form of end to end testing is most
+accurate when the simulation for mock inputs are representative of real-world
+performance and values. Please consider that there is more maintenance to these
+tests because simulators and mocks need to be kept up to date as the system or
+its dependencies evolve. The third type of end to end testing involves full
+stack testing. This includes all of the principles of Modular and Focused
+Journey testing, however it is applied to all of the flows and customer user
+journeys within the scope of the agent design. In addition, it also encompasses
+the practices outlined in the integration system testing section. This full
+agent end to end testing module is the last step before the agent can be handed
+over for user acceptance testing on the customer end and ultimately production
+launch. The process for implementing a full stack testing strategy includes
+combining all of the test cases for all CUJ’s handled by the agent. Once full
+test coverage for the conversational agent is reached, the next step is to add
+testing to ensure the function of all integrated systems, such as the telephony
+integration and chat user interface. Full stack testing is the most
+comprehensive stage of testing for the development team. The entire agent design
+from intent detection to client side system integration is in scope for this
+phase of end to end testing. Once this stage is complete, the agent is ready for
+UAT and production launch upon customer sign off. It is important to note that
+this phase requires the most diverse array of skill amongst the development and
+testing team. Careful planning is required to cover all areas of the agent,
+coordinate testing efforts with backend system availability, and stay within the
+delivery timeframe. When testing the performance of your agent End to End, it is
+important to assess its ability to gracefully handle unexpected situations or
+errors. These are commonly referred to as Fallback scenarios. The most common
+being: no-matches, no-inputs and webhook failures. No-match scenarios occur when
+a user's input does not match any of the defined intents in your agent. It's
+crucial to have a strategy for these circumstances. Your conversational agent
+should be able to acknowledge the misunderstanding and either ask for
+clarification or offer alternative options. No-inputs happen when there is no
+user input, perhaps due to user distraction or confusion. Your conversational
+agent should be designed to handle these silent moments appropriately, either by
+prompting the user again or by providing additional guidance or information.
+Finally, there’s ‘Webhook failures.’ These occur when a call to an external
+webhook results in an error or timeout. It's important for your conversational
+agent to have a contingency plan in these circumstances. Instead of leaving the
+user in the dark, your conversational agent should inform the user of the issue
+in a user-friendly manner and offer alternatives, if possible. Fallback
+scenarios are key to creating a resilient and user-friendly conversational
+Agent. By preparing for these scenarios, you ensure that your agent provides a
+helpful and consistent experience, even when faced with the unexpected. Let’s
+explore a couple of examples on how to test for “no-matches” scenarios. Start by
+creating scenarios where user inputs are intentionally out of the scope of your
+conversational agent capabilities. Think of unusual or unrelated queries that a
+user might input. This step is vital in assessing how your conversational agent
+deals with unexpected or irrelevant user inputs. Next is to define what will be
+your conversational agent response. Should it ask for clarification, direct the
+user to a help menu, or perhaps redirect them to a human operator? The goal is
+to determine the most helpful and natural response for these situations, so make
+sure you account for this in your testing journey. Methods for testing no-input
+scenarios differ when testing by voice over the telephony integration, or
+through the console in chat. When testing no input for telephony, you may simply
+not reply at various stages of the conversation where you want to test the no-
+input fulfillment. For chat testing through the console you can simulate user
+silence or non-response situations, like no audio by using a space character as
+input. Observe how your agent handles these cases, ensuring it effectively re-
+prompts the user or proceeds with predefined default actions for a smooth
+conversation flow. In the last fallback scenario, webhook failures occur when a
+backend service is unavailable or incurs a timeout. You want to ensure the
+conversational agent is able to handle these scenarios in a user-friendly
+manner. The default contingency plan may be to escalate to a live agent.
+Depending on the objective of the webhook called, you may develop alternative
+methods to attempt handling the user’s request. Now that you know what End to
+End testing entails, keep in mind these guidelines for creating and maintaining
+End to End test cases. When introducing a new page, test all existing routes and
+transitions within the flow to ensure they still function correctly on the new
+page. Always include test cases that specifically cover “No-match” and “No-
+input” scenarios to verify how the system handles unexpected situations. For NLU
+updates, such as intents, craft 10 to 15 test cases with variations in how the
+updated intent is triggered. And lastly, if a new page has several access
+points, create test cases covering each path to ensure all routes to the page
+work flawlessly. These best practices will fortify your strategy to preserve the
+end to end conversational experience of your agent.
