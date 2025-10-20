@@ -1,0 +1,30 @@
+VIDEO TRANSCRIPT
+==================================================
+
+Now that you have a better understanding of Agent Assist’s vision and the
+features that support it, let’s dive into its regionalization aspects.
+Regionalization provides data residency to keep customer’s data-at-rest
+physically within a specified geographical region or location. This means that
+when the customer specifies a region, their data-at-rest is not stored outside
+that region. Regionalization is specially helpful in scenarios when your system
+has regulatory or policy requirements that govern where your data must reside.
+Additionally, where your network latencies might be improved when the data is in
+the same region as your customers An important point to keep in mind is that the
+Agent Assist regionalization and data residency does not apply to data-in-use or
+data-in-transit. Keep in mind two limitations associated with the
+regionalization when working with Agent Assist: The first is that model training
+in Agent Assist does not support regionalization. This means that your data may
+get routed outside the region during this process. The second limitation relates
+to CES Transcription, which currently only supports multi-region data in use and
+data at rest (if not using the Speech Adaptation feature) in the EU, US and
+Canada. In this module, you learned about Agent Assist’s vision and its various
+features. You explored how Agent Assist learns from top agents and adapts to
+specific business needs, utilizing AI-powered tools to save time and improve
+productivity. You delved into key features such as Live Transcription, which
+enhances comprehension, and Proactive Generative Knowledge Assist, which
+empowers agents with relevant information. You also discovered LLM Custom
+Summarization, Real-time Translation, Generative Smart Reply, and AI Coach, each
+designed to improve efficiency and customer service. Specifically, you learned
+how these features improve metrics like average handle time, first call
+resolution rate, and customer satisfaction. In the last section of this module
+you studied regionalization with Agent Assist, as well as its limitations.

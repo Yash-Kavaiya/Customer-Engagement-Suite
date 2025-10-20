@@ -1,0 +1,29 @@
+VIDEO TRANSCRIPT
+==================================================
+
+Welcome to the course: “Introduction to Agent Assist and its Gen AI
+capabilities”. This course will focus on Agent Assist, an AI-powered tool
+designed to enhance customer service interactions. You’ll learn how to take full
+advantage of Agent Assist from the Customer Engagement Suite, and its range of
+Gen AI features and functionality. This course is designed for developers, cloud
+architects, telephony engineers, Machine learning engineers, and UI engineers,
+who have experience with Google Cloud. Learners should have completed the
+course: ‘Virtual FAQ with data store agents’. This course provides an
+exploration of Agent Assist, its architecture and general configuration for all
+generative AI features, as well as looking at specific features used during
+handoff from a conversational agent to a human agent, and features to support
+the human agent during a conversation with an end-user. You will begin with an
+introduction to Agent Assist, before exploring the general architecture and
+configuration for Agent Assist. Next you’ll learn about summarization and the
+steps for implementation, as well as sentiment analysis and how to enable it.
+Then you will explore Smart Reply, along with the prerequisites and data
+preparation required to use the feature. You’ll also learn about generative
+knowledge assist and proactive generative knowledge assist, and how to integrate
+it with an agent conversation, as well as the Live transcription feature.
+Finally, you’ll discover the process for drafting a proof of concept for Agent
+Assist, and the delivery lifecycle. This course consists of a variety of videos,
+quizzes and hands on labs, to help bolster your understanding of the Agent
+Development Kit. Please be aware that this is a rapidly evolving space and you
+can expect this course to update over time. Some aspects don’t fully reflect the
+current state of the product, and some of the features are still in development.
+With that said, let’s get started with the course.

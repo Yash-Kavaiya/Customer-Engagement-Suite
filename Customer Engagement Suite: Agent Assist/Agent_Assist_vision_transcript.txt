@@ -1,0 +1,70 @@
+VIDEO TRANSCRIPT
+==================================================
+
+Welcome to this module, Introduction to Agent Assist. In this module, you’ll be
+introduced to Agent Assist, and its key features designed to help human agents
+when they are in a conversation with a customer. You’ll also be equippedwith the
+necessary tools to facilitate the delivery of Agent Assist’s functionalities to
+your agents, subsequently empowering them to provide better, more consistent
+answers to customer questions. Agent Assist is designed to make your agents’
+daily workload easier, and more efficient. An example of a user who can benefit
+from Agent Assist Chat, is a contact center agent in any industry within contact
+center operations, such as telecommunications, healthcare, finance, or retail.
+In this module you’ll learn to develop an understanding of Agent Assist’s
+vision, before exploring its key features. Lastly, you’ll analyze the concept of
+regionalization and its limitations with Agent Assist. Let’s get started! The
+vision behind Agent Assist is to provide agents with a useful tool that provides
+them with suggestions and summaries to user questions. Imagine a system that not
+only learns but adapts. A system that gives your agents the right information at
+the right time, every time, Agent Assist does just that! It does all of this by
+utilizing its rich set of Gen AI features to absorb the skills of your top-
+performing agents, and integrating them into your entire service operation.
+Moreover, it operates on the understanding that every business is unique,
+allowing it to customize its approach to meet business specific needs. This
+ensures that the services provided are on brand with the business that it
+supports. Secondly, Agent Assist harnesses the power of AI by cutting down on
+repetitive tasks. This effective approach allows agents to focus on what truly
+matters; delivering stronger customer support. And thirdly, Agent Assist
+emphasizes proactive support through offering contextually relevant help, that
+results in a boost in both productivity and effectiveness. Next, let's evaluate
+the practical ways in which Agent Assist empowers human agents through the power
+of AI. Imagine human call center agents equipped with a digital sidekick that
+offers in-the-moment assistance, guiding them through complex customer
+interactions. The core focus of Agent Assist is productivity. With Agent Assist,
+your agents can handle more queries more efficiently, therefore reducing overall
+cost. Think of it like having an expert whispering the right answers at the
+right time, enabling agents to speed up their response times. Furthermore, Agent
+Assist also ensures the quality of each interaction between agents and
+customers. Now that you have a better understanding of Agent Assist’s vision and
+application, it’s important to familiarize yourself with its basic resources.
+These include: Conversations Conversation profiles Participants Virtual agents
+And Conversation stages. Let’s unpack these in more detail, starting with
+Conversations. A Conversation is a resource that represents an exchange between
+two or more participants. Every time a conversation participant's utterance is
+passed to Agent Assist as part of a Conversation resource, a message is created
+and stored for the conversation. Furthermore, each conversation is created using
+a conversation profile. Each conversation profile contains a set of parameters
+that control the suggestions provided to the human agent during a conversation.
+You can also configure a conversation profile for use with a virtual agent,
+which auto generates a reply to the end user. These conversation profiles can be
+created either by using the Agent Assist Console or by calling the API directly.
+The third resource refers to the participants in a conversation. These
+participants include the end user, which is the person that the agent is
+conversing with, the automated agent, and the human agent. Conversational Agents
+are virtual agents that you can build and configure for conversations with your
+end-users. You can design your system so that end-users initially interact with
+a virtual agent before being escalated to a human agent. It is also important to
+note that a conversation with an end-user has multiple stages, which you’ll
+analyze next. Stage 1 is known as the connection stage. During this stage, the
+end-user initiates a chat dialog. The second stage is known as the virtual agent
+stage, whereby the end-user is connected to a conversational agent. The virtual
+agent communicates with the end-user and attempts to resolve all issues and
+requests. You can set up your system to bypass the virtual agent and handoff
+stages. If the virtual agent cannot resolve all end-user issues, the
+conversation is handed off to a human agent during the third stage. In stage 4,
+the end-user is connected to one or more human agents. During this stage, Agent
+Assist supplies real-time documents and response suggestions to the human agent
+that are relevant to the conversation. The fifth and final stage is where the
+end-user is disconnected from the text chat. To implement Agent Assist for text-
+based conversations you must integrate the Agent Assist API into your agent
+desktop.

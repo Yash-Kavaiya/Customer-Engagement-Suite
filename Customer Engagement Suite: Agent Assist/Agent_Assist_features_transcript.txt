@@ -1,0 +1,141 @@
+VIDEO TRANSCRIPT
+==================================================
+
+Agent Assist offers a robust suite of features to enhance the level of service
+that your agents can provide your customers. Agent Assist features come into
+action during particular stages of a conversation with an end-user. At the end
+of a conversation between an end-user and a conversational agent, the
+conversation is either ended, or there is an escalation to a human agent. During
+this handoff stage, two Agent Assist features, summarization and sentiment
+analysis, are used to extract information from the conversation, in order to
+determine where the conversation should be directed, and to provide an overview
+of the conversation for the human agent. And then, during the conversation
+between an end-user and a human agent, there are Agent Assist features to
+support the human agent navigate the conversation, utilizing internal documents
+and data, along with generative AI capabilities, to enable a fast, efficient,
+and successful interaction. These include, Smart Reply, Proactive Generative
+Knowledge Assist, and Live Transcription. Of course, summarization and sentiment
+analysis can also come into action at the end of the conversation between the
+end-user and the human agent, to extract important information from that
+interaction as well. Now let’s briefly introduce each of these features,
+starting with the Agent Assist features for agent handoff. Summarization is
+designed to improve agents’ post-call average handle time, and to get the human
+agent up-to-speed with the conversation that the customer had with a virtual
+agent. Generative AI can help summarize call scripts or emails on behalf of
+agents and suggest their next steps. Agents would no longer need to type
+outbound summaries for the next agent to follow up on, as the summaries can be
+created automatically, improving processing times and responses. Furthermore,
+summarization automates the creation of concise summaries, saving agents
+valuable time and ensuring consistent record-keeping. With summarization, both
+customers and developers can use predefined sections, or create custom sections.
+Additionally, it can generate summaries for those common requests customers
+usually have. This allows developers to write their own prompts to fit specific
+business needs. It's not just for the end of a conversation either; you can
+generate summaries anytime during the interaction. Agents are able to review
+those partial summaries, and when they transfer a call, the next agent can take
+note of what's already been summarized. Moreover, it even works for recapping
+interactions that happened before the customer transfers to a live agent, such
+as with IVR or a chatbot. All of this supports agents’ understanding of the
+context better and reduces post-call time, resulting in smoother conversations.
+Sentiment Analysis is a great way to better understand customer interactions at
+a deeper level. It determines emotional intent of a conversation to understand
+whether is positive, neutral or negative. Additionally, it can extract entities,
+classify them and provide additional information on them. Sentiment is
+represented by score and magnitude values, metrics that are returned in the
+response. The score of the sentiment ranges between minus 1 (which is negative)
+and 1 (which is positive), and it corresponds to the overall emotional leaning
+of the text. The magnitude value indicates the overall strength of emotion (both
+positive and negative) within the given text, between 0.0 and infinite. Next,
+let’s explore the Agent Assist features that support a human agent during a
+conversation with an end-user. First, there is Smart Reply. Smart Reply offers
+chat support through streamlining chat interactions between your agents and
+customers, by proposing accurate and contextually appropriate responses that are
+trained on your data. Instead of manually typing complete answers to customers’
+questions, agents can select an answer predicted by Smart Reply, that not only
+saves their time, but the customer’s time as well. The next features are
+Generative Knowledge Assist (or GKA), and Proactive Generative Knowledge Assist,
+or PGKA. Generative Knowledge Assist is much like an encyclopedia for agents,
+providing relevant and fast-retrieval information. This feature uses a data
+store handler to offer relevant knowledge articles in response to agent
+questions. Here is an example of where Generative Knowledge Assist can be used
+during a conversation between the agent and the customer. In the conversation
+that is happening between the agent and the customer, the customer asks Cymbal
+Mobile, what available data plans are available when they travel. The agent can
+take a moment to ask a question to GKA, to search for content in the Cymbal
+Mobile data stores. For example, ‘Available data plans for travel abroad’. The
+data store handler will return a link to a relevant document on Cymbal Mobile’s
+available data plans for travel, in this case the Cymbal Mobile Travel Pass. The
+agent can access the document and use that information to provide a quick and
+efficient answer to the customer. Questions can be asked at any point during the
+conversation, if the agent wants to reference a company document to support
+their response. Generative Knowledge Assist ultimately supports the improvement
+of key performance metrics such as average handle time, first call resolution
+rate, and customer satisfaction, also known as CSAT. Proactive Generative
+Knowledge Assist or PGKA, can be used to automatically generate potential
+questions, or questions and answers during a conversation with a customer, to
+help provide appropriate high-quality responses, which allow the agent to focus
+on the customer. Proactive Generative Knowledge Assist focuses on two key
+functionalities, the first being query generation. Typically, agents will be
+listening or chatting with the customer, while trying to search for information
+that they don’t have immediate answers for. With Agent Assist, it now has the
+ability to analyze the context of the conversation to understand which
+particular terms should generate the meaningful queries for the agent, similar
+to what an agent will normally do in a contact centre. The second functionality
+is answer generation. After the query is generated, the next step is for the
+agent to find the most suitable solution. More often than not, agents are
+required to filter through documentation, or visit various internal and external
+websites in order for them to find the right solution. With answer generation,
+this particular feature will generate the correct answers directly for the
+agent. Moreover, it also provides the links and source information to where the
+solution was generated from. In the event that agents decide that the answer
+provided is not accurate, they still have the option to make edits before
+sending or reading it to the customer. Alternatively, they can also look up the
+source documentation to find the right answers. Here is an example of the Agent
+Assist console where Proactive Generative Knowledge Assist is learning from the
+ongoing conversation between the agent and the customer. During the conversation
+between the agent and the customer, the customer asks about Cymbal Mobile’s
+available data plans for travelling abroad. Proactive Generative Knowledge
+Assist starts searching for content related to the customer query in the
+company’s data stores. And provides the agent with proactive answers, as well as
+any of the references that related to that particular turn of the conversation.
+The agent can use this generated answer as part of their response to the
+customer. This innovative tool utilizes the ongoing conversation as context to
+proactively suggest relevant search queries, enhancing the overall efficiency of
+the support process. With robust search capabilities that deliver generative
+answers, agents can access information quickly and effectively. Additionally,
+the system supports configuration for both internal and external knowledge
+bases, ensuring that agents can find the right resources for each situation. It
+also features internationalization support for 38 Gemini languages, making it
+versatile for diverse user bases. Next, you’ll explore Live Transcription, a
+valuable tool for enhancing communication and information retention. Live
+Transcription functions similarly to captions, providing a real-time written
+record of spoken dialogue which offers several benefits. The first benefit is
+that it significantly improves an agent's comprehension of the conversation.
+This is particularly helpful for non-native speakers who may struggle with rapid
+or nuanced speech. Secondly, it also aids focus and memory, allowing agents to
+process and recall essential details. Furthermore, it can be invaluable in
+situations with less-than-ideal audio, such as noisy environments or when
+dealing with hard-of-hearing individuals. Beyond immediate comprehension, live
+transcription provides a readily accessible history of the call. This allows
+agents to quickly review previous exchanges, helping them to clarify points and
+ensure accuracy. An advantage of this is that the record can also be shared with
+the customer as a helpful reference after the interaction. Finally, the
+transcribed text can be stored within a Customer Relationship Management (CRM)
+system. This creates a searchable archive of conversations, facilitating future
+analysis, quality assurance, and a more comprehensive understanding of customer
+interactions over time. Coming up, you’ll explore multi-lingual support through
+real-time translation. With Real-time Translation, agents no longer have to be
+concerned when their customers speak a different language. Google Cloud's Agent
+Assist can auto-detect over a hundred languages in real time and instantly
+transcribe and translate chats, making language barriers. a thing of the past!
+It realizes that accuracy is important, and therefore it leverages the same
+technology behind Google Translate and Translation AI products to ensure
+seamless communication with customers worldwide. Furthermore, agents can observe
+their own conversations whether through chat or transcription. This feature also
+gives them an opportunity to observe the translations from a customer
+communicating in a different language. Likewise, the customer will notice both
+texts in both languages as well. This ultimately results in a better
+understanding of the conversation between the agent and the customer. Multi-
+lingual support through real-time translation helps improve various key elements
+of a contact center environment. These include average handle time, agent
+utilization rate and first contact resolution.
