@@ -1,0 +1,288 @@
+VIDEO TRANSCRIPT
+==================================================
+
+Welcome to Customer engagement Suite or C. S architecture. In this module,
+you'll cover several topics that will help you succeed in designing, building,
+and maintaining your C. S solutions architectures. You'll start with CES
+resource management, where you'll learn about the infrastructure and resources
+needed to set the foundation for a solid CES architecture. Then, you’ll discuss
+the required steps to plan for the deployment of Agent Assist before evaluating
+the different conversation participants. You’ll then shift your focus to
+analyzing key architectural considerations required when planning for the
+implementation of CES Insights. Finally, you’ll study CES deployment and
+operations, and what this implementation looks like in both production and non-
+production environments. Let’s start by analyzing the architectural resourcing
+considerations for CES. This section aims to address four main objectives.
+First, you’ll explore resourcing organization before identifying the main
+operational environments, along with access considerations that need to be made
+up front to implement CES solutions. Then, you’ll review the integrations that
+can enhance CES solutions, both native in Google Cloud as well as third parties.
+Thirdly, you’ll evaluate how CES fits into the Vertex AI stack. And finally,
+you’ll conclude the section with a brief overview of the advantages of
+leveraging the CES platform to take full advantage of Google Cloud resources.
+Several factors need to be taken into account when preparing to build or
+transform your contact center using CES solutions. The next topic addresses
+these factors, as this is a vital part of CES resource organization. By asking
+some basic questions upfront, you’ll be well positioned to understand the best
+resources that require deployment to achieve the vision for your target
+architecture. First, you need to consider what solutions are in scope for your
+CES implementation. Secondly, are you planning to connect your customers with
+your staff, and will this be done using bots? Subsequently, this begs the
+following question, does your contact center need to be modernized? If so,
+consider using CES Platform and Google’s Contact Center as a Service, or CCaaS.
+Another key consideration is whether you would like to make use of assistive
+technologies, to enable your staff do be more efficient when resolving
+customer’s needs. If the answer is yes, then you might want to consider using
+Agent Assist’s capabilities. Perhaps you require additional support in scaling
+up your ability for self serve in your call center, and improve customer
+satisfaction without increasing your staffing levels? In this case, you’ll
+likely benefit from implementing Conversational Agents. Have you ever had the
+need to perform deep analytics on how your customers are interacting with your
+contact center? If you answered yes to this question, then look no further. With
+CES Insights you have all the tools you need to derive customer, agent, and
+contact center Key Performance Indicators, or KPIs. Based on your answers,
+you’ll be able to determine which resources you’ll need to support these
+solutions, and whether you’ll need special infrastructure to support the level
+of availability and resiliency you desire. Next you’ll shift gears to an
+essential consideration for organizing your CES resources: the interconnection
+of your technologies. This is a critical aspect to consider as it will determine
+how seamlessly your CES components can communicate and share data. To ensure
+efficient and effective operations, you need to define the resources required to
+support your operational environments. Once you have a clear understanding of
+the resources needed, you can then map out the interconnection of your
+technologies. Finally, it's important to consider how you will capture data from
+your CES solution to measure operational success. This data will be essential
+for tracking key performance indicators and identifying areas for improvement.
+This diagram illustrates the level of connection amongst different solutions
+contained in the CES portfolio. It highlights that a holistic CES solution can
+encompass a combination of Telephony, Conversational Agents, and Human Agent
+Assistive technologies. Moreover, you can also leverage CES Insights to analyze
+your data, interact with APIs and the data layer, and connect with other
+services to round out and customize your solution. The needs of the business are
+ultimately what drives the decision around which solutions should be added to
+your CES infrastructure. This emphasizes the need to clarify those requirements
+and their potential impact in advance. Once you’ve gained buy-in from the
+business on which solution can drive the most impact, you can start to set up
+your operational environments. When building a CES solution, it’s important to
+adhere to the strictest, and least privileged access for the underlying
+resources, users, and service accounts, to preserve the security and robustness
+of your architecture. This starts with knowing the difference between projects
+and conversational agents within Google Cloud, and how to implement the correct
+number of each for easy and consistent operations. Projects are a logical
+collection of Cloud resources that delegate Identity Access Management , or IAM
+access controls. The best practice is to create two projects, specifically for
+CES. The first to host your non-production development and test resources, and a
+second project that contains your staging and production resources. Some users
+opt to have for three separate projects, one for Development, one for Staging,
+and one for Production. Ultimately the decision lies with you or your client
+organization, as long as it allows for a clear separation between production and
+development. Conversely, conversational agents are a logical collection of
+interactions targeting fulfillments that help end users get answers to their
+questions. You usually only need one conversational agent to support all non-
+production environments, and another to support your production environments.
+Creating more than two conversational agents in the same project is generally
+required only if you have a need to handle interactions for completely different
+types of users or lines of business. If two conversational agents are targeting
+different types of end users and are being developed or operated by different
+teams, you should consider placing them in separate projects to manage their
+access controls independently. This is usually done to manage access controls in
+the event where different teams manage the conversational agent development and
+operations. This will prevent cross-conversational agent access. Lastly, please
+note that conversational agents are often referred to simply as “agents”. So
+when you come across the term “agent” from a resource perspective, keep in mind
+that it always refers to conversational agents rather than human agents. The
+next critical decision to be made in the set up of a new operational environment
+is deciding between public and private connectivity between clients and the
+Conversational Agents API. When using public methods, you don’t need to set up
+any additional infrastructure. The reason for this is that your Conversational
+Agents client will simply connect to a Conversational Agents API endpoint, which
+is public. Note that when you use this public API endpoint, this does not mean
+that your Conversational Agents communications are publicly accessible. Instead,
+they are encrypted with Transport Layer Security, or TLS, and use a service
+account and OAuth credentials for authentication and authorization. Conversely,
+private communication requires the configuration of a private interconnection to
+a Google Cloud VPC. This process is a bit more complex than the public
+communication as it requires the following: First is a Private Service Connect
+for Google Cloud APIs to the VPC. This is to ensure the IP address for the
+Private Service Connect can reach the customer’s private network. It also
+requires the addition of Conversational Agents hostnames to DNS that point to
+the Private Service Connect IP address. Ultimately the decision lies with you or
+your clients, and are dependent on the specific circumstances of the
+implementation. Most Conversational Agent implementations rely on public
+communication, while those in specific industries or locations might opt for
+private connectivity instead. This diagram shows an example of how both public
+and private communications can flow between end users, conversational agents and
+human agents. Let’s take some time to delve into the main aspects. If your
+organization or the customer organization you are working with cannot use
+Google’s public API endpoints, then they need to set up a private interconnect.
+The private interconnect must be set up between the data center where the
+organization’s chat or voice server exists and Google Cloud. In the VPC where
+that interconnect lands, a Private Service Connect needs to be setup to
+communicate with conversational agents. Also an internal DNS server is required
+to resolve the conversational agents’ hostnames to the organization’s Private
+Service Connect IP address. Next, let's discuss some details about how this can
+work in your environment by taking the example of a Conversational Agent that’s
+to be implemented within the solution. As mentioned previously, Conversational
+Agents has public API endpoints and can use TLS, OAuth, and VPC Service Controls
+to ensure privacy and security. This is usually the fastest way to send requests
+to Conversational Agents and it doesn't sacrifice security. However, in
+environments where private connectivity is a requirement, you can leverage a
+private Interconnect to reach Conversational Agents’ APIs. If Agent Assist is in
+scope, then you’ll need to determine the following: Are you implementing a
+Contact Center as a Service, or CCaaS? Or are you implementing an on-premises
+service that has native integration with Google CES and the Agent Assist
+functionality in the Conversational Agents API? If you are implementing a CCaaS
+solution, then this system will manage sharing the conversation utterances to
+Conversational Agents, and it will automatically surface information to your
+human agent based on the system's configuration. If Agent Assist is not in the
+solution’s scope, then the incoming audio stream must be routed directly to the
+Conversational Agent. There are two ways to send the audio to Conversational
+Agents: The first option is to send gRPC requests to the Conversational Agents
+APIs. This involves using one of Conversational Agents’ gRPC APIs designed to
+handle audio input. Available APIs include: Analyze content, Detect intent,
+Streaming Analyze Content, and Streaming Detect Intent. Another option is to use
+the SIP Endpoint provisioned by the Google Telephony Platform (or GTP) Next,
+let’s explore how you can control access to CES services and APIs. It’s very
+important to follow best practices for access control to ensure your resources
+are well protected by following the principle of least privilege. The backbone
+of a robust access control system is Identity and Access Management, or IAM. IAM
+is a framework of policies and technologies to ensure that the right users have
+the appropriate access to the right resources. With IAM, you can define who has
+permission to do what on which cloud resources. IAM also relies on the concept
+of roles. Roles are simply bundles of permissions that define what actions a
+user or service account can take on Google Cloud resources. That means a role
+might contain multiple, smaller permissions that allow actions like viewing
+data, launching virtual machines, or changing firewall settings. Google Cloud
+offers a selection of predefined roles to quickly address typical use cases.
+However, If you need very specific, fine-grained permissions, then you also have
+the flexibility to create custom roles best aligned with your security policies.
+At the beginning of your journey toward building a CES solution, it is
+recommended that you create the following groups where relevant. If you’re
+developing Virtual Agents, the primary agent configurations should be managed by
+your developer operations team, also known as the “VA Ops Group” with its own
+role. Your team of conversation developers, or “VA Flow Devs”, require the
+ability to edit flows with a separate role from the VA Ops Group. Similarly,
+anyone developing webhooks within Google Cloud, also referred to as the “VA
+Webhook Devs”, will need a variety of roles depending on which technologies you
+choose to use. The most common role the Webhook devs need is the Cloud Run
+Administrator role. However, they’ll also need to receive the Conversational
+Agents Webhook Admins role so that they can configure agent webhooks. When you
+assign IAM roles to these groups, access to Cloud resources is granted to all
+the users who are members of it. For Agent Assist, your developers, the “AA
+devs” group, will have both the Conversational Agents Admin role but also the
+PubSub Admin role, due to the importance PubSub plays in Agent Assist. When it
+comes to Insights, your CES Analysts, the CES analysts group, typically receives
+the BigQuery admin and Contact Center Insights Editor roles. Please note that
+these are some of the main recommended roles, and your final list will vary
+depending on precise requirements and restrictions. Similarly, If you are
+deploying CES services through the CES Platform, then assign the CES Platform
+Admin role to a “CES-Admins Group”. To assign additional access controls for CES
+Platform users, you can use the CES Platform Portal. In the next section you’ll
+unpack how CES solutions integrate with other Google Cloud and third party
+services. When building the operational readiness of your target infrastructure,
+keep in mind that there are several Google Cloud services beyond what is
+immediately available in CES. These services can greatly complement and support
+CES solutions. The most popular are: Cloud Logging, Cloud Monitoring, BigQuery,
+Looker Studio, Sensitive Data Protection with the Cloud DLP API, Cloud Run
+functions, And Cloud Run. Let’s unpack the details of these services. Cloud
+Observability is important to keep a pulse on the performance of your CES
+solution. Cloud Logging supports your observability needs by enabling you to
+capture log information from your cloud resources. This can greatly enhance your
+ability to monitor your conversational agent interactions. Cloud Monitoring
+helps you collect and observe important metrics, events, and metadata. Such
+information is important when looking at the performance of CES solutions and
+other associated components. The most common metrics observed are error rates
+and latency, but many other Key Performance Indicators, or KPIs can be
+configured. BigQuery helps you build data warehouses when you need interaction
+logging and analytics for your CES solution. This can greatly advance your
+ability to adapt, maintain and evolve your CES solution. BigQuery data can be
+easily viewed with Looker Studio, which can help you create reports and
+visualize your data. This is exceptionally important when you want to monitor
+performance of the conversational agent or other CES services. Sensitive Data
+Protection, and more specifically the Cloud Data Loss Prevention component, or
+Cloud DLP, is a service that helps you protect and secure personally
+identifiable information, or PII in your data. It achieves this by identifying
+the particular PII based on a template and set of PII types. Once PII is
+identified, the data can be masked, replaced, or removed. Note that when
+implementing a conversational agent, it is vital to identify any parameters
+collected that would be considered PII to help prevent them from being logged.
+Finally, Virtual Agents can connect to systems in order to look up information
+or carry out transactions. These connections to your APIs are known as webhooks.
+Cloud Run functions and Cloud Run are two popular options to get webhook code up
+and running and are often used with Conversational Agents. The popularity of
+these options is largely due to the ease of implementation of microservices,
+coupled with the elasticity to rapidly scale up and down. Other options include
+Kubernetes Engine, Compute Engine, App Engine, or Apigee. Another type of
+integration facilitated by CES solutions is with Telephony and Chat providers.
+These are key to any successful CES implementation. Conversational Agents
+provides one-click integrations with many popular vendors and technologies. And
+when one click integrations don’t exist, it allows for the development of a
+custom connection through CES APIs. Next you’ll explore the Vertex AI ecosystem
+to understand how CES fits into it. As we’ve discovered, seamless integrations
+are key to fully unlocking the business value of your CES solutions. This is
+because they promote a comprehensive, end-to-end approach that removes the
+friction often experienced when building legacy contact centers. They do this by
+stitching different solutions together for incremental gains. When you partner
+with Google Cloud for your AI needs, you get a comprehensive technology offering
+built on Vertex AI. Vertex AI is a machine learning, or ML platform, that allows
+you to train and deploy ML models and AI applications. Furthermore, you can also
+customize large language models, also known as LLMs, for use in your AI-powered
+application. The platform stack is multilayered and multipurpose. Starting at
+the bottom, there’s Google’s world class AI optimized infrastructure with GPU
+and TPU accelerators, fully integrated with Google Data Cloud. On top of it sits
+the Vertex AI Model garden, a one stop shop to find first-party, open source and
+third-party large language models. AI Platform leverages the resources from the
+Model Garden to provide end-to-end tooling to build, deploy and monitor Gen AI
+models and pipelines. Vertex AI Search and Conversation is the interface that
+developers can then lean on to access the AI platform resources to quickly and
+easily infuse chat, Gen AI, and search into their Enterprise applications. And
+lastly, AI Solutions such as CES sit on top of the stack. They leverage the
+Vertex AI Search and Conversation to deploy chatbots and voicebots at scale.
+This means that CES takes advantage of the full stack of resources and
+capabilities available in Vertex AI. In order to accommodate different use
+cases, Vertex AI capabilities were made accessible both through the Vertex AI
+Search and Conversation console as well as natively (or out-of-the-box) in CES.
+For example, a customer that has a high level of AI proficiency, may want to
+build highly customized use cases. These customers can take advantage of
+independent, or “build your own” components of Vertex and assemble them
+according to their needs, including: Model Garden, AI Applications, Search,
+Conversation, And third-party LLMs. Other clients may be after low code or no-
+code products ready for use in customer service use cases. In this instance, the
+best solution for them is to leverage off-the-shelf packaged products such as:
+CES Platform, Conversational Agents, Agent Assist, Or Insights. Vertex also
+offers a number of pre-built solutions for specific verticals or use cases like
+food ordering and financial services. Prebuilts allow you to leverage templates
+that just require fine tuning to adapt to specific use cases. CES services are
+the building blocks that power an AI driven contact center. In order to leverage
+these services, an underlying contact center platform is needed. In this section
+you will discuss the available integration options with CES and the options that
+customers have when seeking to adopt CES services. Before you delve into the
+details of CES integrations, let’s pause and take a quick look at some important
+background information. In 2019, Google Cloud started working with the leading
+ISVs to enable native integrations between their platforms and Google Cloud CES
+services. This allowed customers to easily integrate with Genesys, NICE, Avaya,
+Cisco, Five9, and many others. It resulted in customers being able to add
+advanced conversational AI capabilities to their existing traditional contact
+center infrastructure. For many this extended the life of their existing contact
+center solution. However, this integration can be sub-optimal when it comes to
+operation, observability as well as end to end serviceability. As a result of
+this, the demand for a fully managed, native end-to-end Google Cloud solution
+for Contact Centers operations originated. The solution is called CES Platform.
+CES is Google Cloud's own CCaaS offering for a modern, AI-powered Contact Center
+as a Service. It operates hand-in-hand with Conversational Agents, Agent Assist
+for real-time guidance, as well as Insights to understand contact center
+analytics, customer sentiment and trends. It also integrates seamlessly with all
+the most popular CRMs and supports multiple channels such as voice, mobile and
+web chat, SMS, social channels and email. The CES Platform is a great option to
+pursue for streamlined setup and quick results and it’s easier to manage than a
+CES integration with OEM partners. Your choice between implementing new
+infrastructure and retaining your existing contact center solution will directly
+influence the range of options and strategies available to you. Let’s evaluate
+these different options. First, you can use the CES Platform if you’re looking
+for a new Contact Center as a Service platform, or full Google-native solution.
+Alternatively, you can start with Google Cloud CES today and retain the option
+to easily switch platforms in the future, by opting for CES “over the top”,
+which adds CES solutions AI capabilities to an existing platform. Lastly, as a
+third option, you can leverage CES’s integration with OEM partners if you want
+to retain your existing contact center infrastructure. Ultimately, the choice
+resides with you and your customers based on existing needs and circumstances.

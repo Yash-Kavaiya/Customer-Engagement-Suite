@@ -1,0 +1,62 @@
+VIDEO TRANSCRIPT
+==================================================
+
+Next, you’ll explore planning for Agent Assist. This section aims to address two
+main objectives. The first objective focuses on understanding the key
+architectural considerations that need to be taken into account when planning to
+implement solutions with Agent Assist. And secondly, you’ll review the Agent
+Assist components and workflow. Agent Assist is a CES solution that empowers
+human agents through the power of AI. Imagine human call center agents equipped
+with a digital sidekick that offers in-the-moment assistance, guiding them
+through complex customer interactions. Moreover, with Agent Assist, your human
+agents can handle more queries, more efficiently. Additionally, it also speeds
+up your call center agents’ response time and lifts the quality bar of each
+customer and human agent interaction. A number of factors need to be considered
+when you plan to implement Agent Assist in a contact center. In order of
+priority, the decisions include: What Agent Assist features will be used? How
+will input chat or audio be sent in to Agent Assist? How will responses be
+presented to human agents on their Agent desktop? And lastly, how does Agent
+Assist integrate with other Google Cloud components and other CES solutions?
+Next, let’s explore the various components of Agent Assist and delve deeper into
+its workflow. Agent Assist offers a powerful suite of features to enhance the
+level of service that your human agents can provide to your customers. These
+features include Smart Reply, which streamlines chat interactions by proposing
+accurate and contextually appropriate responses, saving precious time for both
+agents and customers. There’s also Generative Knowledge Assist, which provides
+agent-facing Gen AI Agents and proactively surfaces generative answers with
+relevant knowledge articles. Summarization offers real-time abstractive call
+summary with customizable focus areas and writing styles. Sentiment Analysis
+allows you to better understand customer interactions at a deeper level by
+detecting the customer prevailing emotions (both positive and negative) during
+the interaction. And finally, the Live Transcription feature transcribes every
+word of the interaction between the customer and the agent in real-time. Agent
+Assist processes customer interactions through chat and voice and provides
+support to agents. You can do so by using the chat client and the Agent desktop.
+The chat backend server, illustrated here as the customer serving stack,
+integrates with Agent Assist using Conversational Agents APIs. While you can
+also integrate through voice using gRPC or SIPREC so that Agent Assist can
+analyze the conversation in real-time using Speech-to-Text. Subsequently,
+transcripts and recommendations are relayed from the API to the customer serving
+stack based on the input text. And finally, the customer serving stack transfers
+the information to the Agent desktop through APIs or pubsub topics. Let’s
+analyze a quick overview of the conversation participants. To understand the
+architecture, consider an example where a chat from a customer is transferred
+seamlessly from a conversational agent to a human agent with all the context. To
+connect to a Conversational Agent, the customer can use a chat client in the
+form of a chat interface on a website, or any other third party tools. Upon
+connecting to the Conversational Agent, the customer is greeted by the
+conversational agent. The conversation will occur between the customer and the
+conversational agent until a handoff to the human agent is required, for example
+in the case of an escalation by the customer. When the handoff is initiated, the
+conversation is forked from Conversational Agents, establishing a connection
+with Agent Assist and a human agent. Conversation data is then sent to the Agent
+Assist NLU module, which can match Dialog intents and knowledge base articles
+based on the configuration. Knowledge services then provide two types of
+documents: FAQ documentation and articles. Agent Assist attempts to match either
+the FAQ documentation, or the content in the articles, and provide suggestions
+through an API to the agent desktop. In the Agent Desktop, the human agent can
+access the full conversation transcript for immediate context as well as
+historical analysis. As the conversation continues, the human agent will
+continue receiving suggestions from Agent Assist. It can provide feedback on
+whether those suggestions were accurate or useful in order to continuously
+improve the model.
